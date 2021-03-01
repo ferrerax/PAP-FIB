@@ -1,0 +1,7 @@
+
+ USAGE: ./submit-extrae.sh prog range slice_size num_threads
+ prog -> omp program name
+ range -> count primes between 2 and range
+ # slice_size -> size of the blocks to sieve (only for sieve2)
+ num_threads -> number of threads
+
