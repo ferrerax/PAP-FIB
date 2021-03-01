@@ -1,0 +1,4 @@
+make: 'sieve1-omp' is up to date.
+Range = 100000
+Number of primes smaller than or equal to 100000 = 9592
+0.003074

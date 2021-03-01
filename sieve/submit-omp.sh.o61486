@@ -1,0 +1,106 @@
+make: 'sieve1-omp' is up to date.
+Welcome to Extrae 3.5.4
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 24
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: Warning! change-at-time time units not specified. Using seconds
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_INS (0x80000032) PAPI_TOT_CYC (0x8000003b) PAPI_L1_DCM (0x80000000) PAPI_L2_DCM (0x80000002) PAPI_L3_TCM (0x80000008) PAPI_BR_INS (0x80000037) PAPI_BR_MSP (0x8000002e) RESOURCE_STALLS (0x40000028) > - never changes
+Extrae: Warning! change-at-time time units not specified. Using seconds
+Extrae: PAPI domain set to ALL for HWC set 2
+Extrae: HWC set 2 contains following counters < PAPI_TOT_INS (0x80000032) PAPI_TOT_CYC (0x8000003b) PAPI_VEC_SP (0x80000069) PAPI_SR_INS (0x80000036) PAPI_LD_INS (0x80000035) PAPI_FP_INS (0x80000034) > - never changes
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/pap0016/lab1/sieve
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 24 threads
+
+Range = 100000000
+Number of primes smaller than or equal to 100000000 = 5761455
+0.961697
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000007.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000008.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000009.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000010.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000011.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000012.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000013.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000014.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000015.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000016.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000017.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000018.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000019.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000020.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000021.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000022.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000023.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+merger: Output trace format is: Paraver
+merger: Extrae 3.5.4
+mpi2prv: Assigned nodes < boada-3 >
+mpi2prv: Assigned size per processor < 7 Mbytes >
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000000.mpit is object 1.1.1 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000001.mpit is object 1.1.2 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000002.mpit is object 1.1.3 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000003.mpit is object 1.1.4 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000004.mpit is object 1.1.5 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000005.mpit is object 1.1.6 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000006.mpit is object 1.1.7 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000007.mpit is object 1.1.8 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000008.mpit is object 1.1.9 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000009.mpit is object 1.1.10 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000010.mpit is object 1.1.11 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000011.mpit is object 1.1.12 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000012.mpit is object 1.1.13 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000013.mpit is object 1.1.14 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000014.mpit is object 1.1.15 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000015.mpit is object 1.1.16 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000016.mpit is object 1.1.17 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000017.mpit is object 1.1.18 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000018.mpit is object 1.1.19 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000019.mpit is object 1.1.20 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000020.mpit is object 1.1.21 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000021.mpit is object 1.1.22 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000022.mpit is object 1.1.23 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/lab1/sieve/set-0/TRACE@boada-3.0000009191000000000023.mpit is object 1.1.24 on node boada-3 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: A total of 12 symbols were imported from TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 12 HWC counter descriptions imported
+mpi2prv: Checking for target directory existance... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Searching synchronization points... done
+mpi2prv: Time Synchronization disabled.
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 279616 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 12230348 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! sieve1-100000000-24-boada-3.prv has been generated.

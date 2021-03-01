@@ -1,0 +1,8 @@
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: Error! Hardware counter PAPI_L3_TCM (0x80000008) cannot be added in set 1 (thread 0)
+Extrae: Error! Hardware counter PAPI_BR_INS (0x80000037) cannot be added in set 1 (thread 0)
+Extrae: Error! Hardware counter PAPI_BR_MSP (0x8000002e) cannot be added in set 1 (thread 0)
+Extrae: Error! Hardware counter RESOURCE_STALLS (0x40000028) cannot be added in set 1 (thread 0)
+Extrae: Error! Hardware counter PAPI_FP_INS (0x80000034) cannot be added in set 2 (thread 0)
+mpi2prv: WARNING! Cannot open binary file 'sieve1': No such file or directory.
+         Addresses will not be translated into source code references
