@@ -16,7 +16,7 @@ fi
 
 SEQ=$1-seq
 PROG=$1-omp
-size=100000000
+size=1000000000
 block=100000
 np_NMIN=1
 np_NMAX=24
@@ -40,8 +40,8 @@ i=0        # Variable contador de repeticiones
 while (test $i -lt $N)
 	do
 		echo -n Run $i... 
-                /usr/bin/time --format=%e ./$SEQ $size > $out 2>$aux
-#                /usr/bin/time --format=%e ./$SEQ $size $block > $out 2>$aux
+#                /usr/bin/time --format=%e ./$SEQ $size > $out 2>$aux
+                /usr/bin/time --format=%e ./$SEQ $size $block > $out 2>$aux
 
 		time=`cat $aux|tail -n 1`
 		echo Elapsed time = `cat $aux`
@@ -74,8 +74,8 @@ do
 	while (test $i -lt $N)
 		do
 			echo -n Run $i... 
-                        /usr/bin/time --format=%e ./$PROG $size $PARS > $out 2>$aux
-#                        /usr/bin/time --format=%e ./$PROG $size $block $PARS > $out 2>$aux
+#                        /usr/bin/time --format=%e ./$PROG $size $PARS > $out 2>$aux
+                        /usr/bin/time --format=%e ./$PROG $size $block $PARS > $out 2>$aux
 
 			time=`cat $aux|tail -n 1`
 			echo Elapsed time = `cat $aux`
@@ -122,4 +122,5 @@ echo
 
 HOST=$(echo $HOSTNAME | cut -f 1 -d'.')
 
-jgraph -P strongscale.jgr >  strong-$PROG-$size-$np_NMIN-$np_NMAX-$N-${HOST}.ps
+jgraph -P strongscale.jgr > test1.ps
+#cat strongscale.jgr > test2.txt

@@ -1,0 +1,20 @@
+sieve2_implicit.c(80): warning #3180: unrecognized OpenMP #pragma
+  #pragma omp parallel 
+  ^
+
+sieve2_implicit.c(85): warning #266: function "omp_get_num_threads" declared implicitly
+  	    if (bloc % omp_get_num_threads() == omp_get_thread_num()){	
+  	               ^
+
+sieve2_implicit.c(85): warning #266: function "omp_get_thread_num" declared implicitly
+  	    if (bloc % omp_get_num_threads() == omp_get_thread_num()){	
+  	                                        ^
+
+sieve2_implicit.c(92): warning #3180: unrecognized OpenMP #pragma
+  #pragma omp atomic
+  ^
+
+/tmp/iccgN5f92.o: In function `eratosthenes':
+/scratch/nas/1/pap0016/lab/lab1/sieve/sieve2_implicit.c:85: undefined reference to `omp_get_num_threads'
+/scratch/nas/1/pap0016/lab/lab1/sieve/sieve2_implicit.c:85: undefined reference to `omp_get_thread_num'
+make: *** [sieve2_implicit-seq] Error 1

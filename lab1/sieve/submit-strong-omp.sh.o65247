@@ -1,0 +1,207 @@
+make: 'sieve2-seq' is up to date.
+make: 'sieve2-omp' is up to date.
+Executing sieve2-seq sequentially
+Run 0...Elapsed time = 11.45
+Run 1...Elapsed time = 11.45
+Run 2...Elapsed time = 11.46
+ELAPSED TIME MIN OF 3 EXECUTIONS =11.45
+
+sieve2-omp 1000000000 1 24 3
+Starting OpenMP executions...
+Executing sieve2-omp with 1 threads
+Run 0...Elapsed time = 11.42
+Run 1...Elapsed time = 11.41
+Run 2...Elapsed time = 11.41
+ELAPSED TIME MIN OF 3 EXECUTIONS =11.41
+
+Executing sieve2-omp with 2 threads
+Run 0...Elapsed time = 5.71
+Run 1...Elapsed time = 5.72
+Run 2...Elapsed time = 5.72
+ELAPSED TIME MIN OF 3 EXECUTIONS =5.71
+
+Executing sieve2-omp with 3 threads
+Run 0...Elapsed time = 3.83
+Run 1...Elapsed time = 3.83
+Run 2...Elapsed time = 3.83
+ELAPSED TIME MIN OF 3 EXECUTIONS =3.83
+
+Executing sieve2-omp with 4 threads
+Run 0...Elapsed time = 2.88
+Run 1...Elapsed time = 2.88
+Run 2...Elapsed time = 2.88
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.88
+
+Executing sieve2-omp with 5 threads
+Run 0...Elapsed time = 2.37
+Run 1...Elapsed time = 2.37
+Run 2...Elapsed time = 2.36
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.36
+
+Executing sieve2-omp with 6 threads
+Run 0...Elapsed time = 2.01
+Run 1...Elapsed time = 2.01
+Run 2...Elapsed time = 2.01
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.01
+
+Executing sieve2-omp with 7 threads
+Run 0...Elapsed time = 1.72
+Run 1...Elapsed time = 1.72
+Run 2...Elapsed time = 1.72
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.72
+
+Executing sieve2-omp with 8 threads
+Run 0...Elapsed time = 1.52
+Run 1...Elapsed time = 1.51
+Run 2...Elapsed time = 1.51
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.51
+
+Executing sieve2-omp with 9 threads
+Run 0...Elapsed time = 1.39
+Run 1...Elapsed time = 1.38
+Run 2...Elapsed time = 1.38
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.38
+
+Executing sieve2-omp with 10 threads
+Run 0...Elapsed time = 1.27
+Run 1...Elapsed time = 1.27
+Run 2...Elapsed time = 1.27
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.27
+
+Executing sieve2-omp with 11 threads
+Run 0...Elapsed time = 1.16
+Run 1...Elapsed time = 1.16
+Run 2...Elapsed time = 1.16
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.16
+
+Executing sieve2-omp with 12 threads
+Run 0...Elapsed time = 1.06
+Run 1...Elapsed time = 1.06
+Run 2...Elapsed time = 1.06
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.06
+
+Executing sieve2-omp with 13 threads
+Run 0...Elapsed time = 1.03
+Run 1...Elapsed time = 1.04
+Run 2...Elapsed time = 1.04
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.03
+
+Executing sieve2-omp with 14 threads
+Run 0...Elapsed time = 1.01
+Run 1...Elapsed time = 1.03
+Run 2...Elapsed time = 1.01
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.01
+
+Executing sieve2-omp with 15 threads
+Run 0...Elapsed time = 0.99
+Run 1...Elapsed time = 0.99
+Run 2...Elapsed time = 0.99
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.99
+
+Executing sieve2-omp with 16 threads
+Run 0...Elapsed time = 0.97
+Run 1...Elapsed time = 0.97
+Run 2...Elapsed time = 0.97
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.97
+
+Executing sieve2-omp with 17 threads
+Run 0...Elapsed time = 0.95
+Run 1...Elapsed time = 0.95
+Run 2...Elapsed time = 0.95
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.95
+
+Executing sieve2-omp with 18 threads
+Run 0...Elapsed time = 0.93
+Run 1...Elapsed time = 0.93
+Run 2...Elapsed time = 0.93
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.93
+
+Executing sieve2-omp with 19 threads
+Run 0...Elapsed time = 0.91
+Run 1...Elapsed time = 0.91
+Run 2...Elapsed time = 0.91
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.91
+
+Executing sieve2-omp with 20 threads
+Run 0...Elapsed time = 0.89
+Run 1...Elapsed time = 0.89
+Run 2...Elapsed time = 0.90
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.89
+
+Executing sieve2-omp with 21 threads
+Run 0...Elapsed time = 0.88
+Run 1...Elapsed time = 0.88
+Run 2...Elapsed time = 0.88
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.88
+
+Executing sieve2-omp with 22 threads
+Run 0...Elapsed time = 0.86
+Run 1...Elapsed time = 0.86
+Run 2...Elapsed time = 0.86
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.86
+
+Executing sieve2-omp with 23 threads
+Run 0...Elapsed time = 0.85
+Run 1...Elapsed time = 0.85
+Run 2...Elapsed time = 0.85
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.85
+
+Executing sieve2-omp with 24 threads
+Run 0...Elapsed time = 0.83
+Run 1...Elapsed time = 0.83
+Run 2...Elapsed time = 0.83
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.83
+
+Resultat de l'experiment (tambe es troben a  ./elapsed.txt  i  ./speedup.txt  )
+#threads	Elapsed min
+1   11.41
+2   5.71
+3   3.83
+4   2.88
+5   2.36
+6   2.01
+7   1.72
+8   1.51
+9   1.38
+10   1.27
+11   1.16
+12   1.06
+13   1.03
+14   1.01
+15   0.99
+16   0.97
+17   0.95
+18   0.93
+19   0.91
+20   0.89
+21   0.88
+22   0.86
+23   0.85
+24   0.83
+
+#threads	Speedup
+1   1.00350569675723049956
+2   2.00525394045534150612
+3   2.98955613577023498694
+4   3.97569444444444444444
+5   4.85169491525423728813
+6   5.69651741293532338308
+7   6.65697674418604651162
+8   7.58278145695364238410
+9   8.29710144927536231884
+10   9.01574803149606299212
+11   9.87068965517241379310
+12   10.80188679245283018867
+13   11.11650485436893203883
+14   11.33663366336633663366
+15   11.56565656565656565656
+16   11.80412371134020618556
+17   12.05263157894736842105
+18   12.31182795698924731182
+19   12.58241758241758241758
+20   12.86516853932584269662
+21   13.01136363636363636363
+22   13.31395348837209302325
+23   13.47058823529411764705
+24   13.79518072289156626506
+

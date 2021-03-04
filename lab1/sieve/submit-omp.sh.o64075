@@ -1,0 +1,6 @@
+make: 'sieve2-omp' is up to date.
+Error: Invalid number of arguments
+sieve <range> <slice_size> <thread count>
+      <range> is an integer N - the range is from 2 - N
+      <slice_size> is to sieve the list from 2 - N in blocks
+      <thread count> is the number of threads to use

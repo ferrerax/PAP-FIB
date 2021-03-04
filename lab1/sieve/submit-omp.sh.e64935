@@ -1,0 +1,5 @@
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+/var/spool/slurmd/job64935/slurm_script: line 35: 10116 Killed                  ./$1-omp $2 $3
+mpi2prv: WARNING! Cannot open binary file 'sieve2_task': No such file or directory.
+         Addresses will not be translated into source code references
+mpi2prv: Warning: Couldn't open /scratch/nas/1/pap0016/lab1/sieve/sieve1-omp for reading, addresses may not be translated.
