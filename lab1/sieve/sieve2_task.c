@@ -75,23 +75,20 @@ int eratosthenes(int lastNumber, int sliceSize)
   int red [40] = {0};
   #pragma omp parallel
   {
-  int found_private = 0;
   #pragma omp single
 	{
 	  // each slice covers ["from" ... "to"], incl. "from" and "to"
 	  for (int from = 2; from <= lastNumber; from += sliceSize) {
 	    int to = from + sliceSize;
 	    if (to > lastNumber) to = lastNumber;
-	   #pragma omp task firstprivate(from,to) lastprivate(found_private)
-	    {found_private += eratosthenesBlock(from, to);}
+	   #pragma omp task firstprivate(from,to) 
+	    {red[omp_get_thread_num()] += eratosthenesBlock(from, to);}
 	  }
 	} 
-#pragma omp atomic
-	found += found_private;
   }
 	  
-	//for (int i = 0; i < 40; i++)
-		//found += red[i];
+	for (int i = 0; i < 40; i++)
+		found += red[i];
   	  printf("%d\n", found);
 	  return found;
 }
