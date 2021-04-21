@@ -9,5 +9,5 @@ miniomp_single_t miniomp_single;
 bool
 GOMP_single_start (void) {
   printf("TBI: Entering into single, don't know if anyone else arrived before, I proceed\n");
-  return(true);
+  return(!omp_get_thread_num());
 }
