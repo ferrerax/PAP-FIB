@@ -22,7 +22,7 @@ worker(void *args) {
   //   1) save thread-specific data
         pthread_setspecific(miniomp_specifickey, (void *) thread->id);	
   //   2) invoke the per-threads instance of function encapsulating the parallel region
-	*(thread->fn)(thread->fn_data);
+	thread->fn(thread->fn_data);
   //   3) exit the function
   pthread_exit(NULL);
 }
@@ -36,17 +36,17 @@ GOMP_parallel (void (*fn) (void *), void *data, unsigned num_threads, unsigned i
   omp_set_num_threads(num_threads);
   //printf("Starting a parallel region using %d threads\n", num_threads);
   miniomp_threads=malloc(sizeof(pthread_t)*num_threads);
-  miniomp_parallel=malloc(sizeof(pthread_t)*num_threads);
+  miniomp_parallel=malloc(sizeof(miniomp_parallel_t)*num_threads);
   // Per si de cas cal guardar aquesta info del thread pare:
   miniomp_parallel[0].fn = fn;
   miniomp_parallel[0].fn_data = data;
   miniomp_parallel[0].id = 0;
   //Creacio dels fills
   for (int i=1; i<num_threads; i++){
-	miniomp_parallel[i].fn = fn;
+	miniomp_parallel[i].fn = *fn;
 	miniomp_parallel[i].fn_data = data;
 	miniomp_parallel[i].id = i;
-	worker(miniomp_parallel[i]);
+	pthread_create(&miniomp_threads[i],NULL,&worker,&miniomp_parallel[i]);
   }     
   fn (data);
   for (int i=1; i<num_threads; i++){
@@ -54,5 +54,5 @@ GOMP_parallel (void (*fn) (void *), void *data, unsigned num_threads, unsigned i
   }
   free(miniomp_threads);
   free(miniomp_parallel);
-  omp_set_num_threads(num_threads);   //Retorno el valor que tenien els threads.
+  omp_set_num_threads(anticThreads);   //Retorno el valor que tenien els threads.
 }
