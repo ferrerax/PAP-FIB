@@ -20,7 +20,7 @@ worker(void *args) {
 	miniomp_parallel_t * thread = args;
   // insert all necessary code here for:
   //   1) save thread-specific data
-        pthread_setspecific(miniomp_specifickey, (void *) thread->id);	
+        pthread_setspecific(miniomp_specifickey, (void *)(intptr_t) thread->id);	
   //   2) invoke the per-threads instance of function encapsulating the parallel region
 	thread->fn(thread->fn_data);
   //   3) exit the function
@@ -32,8 +32,11 @@ GOMP_parallel (void (*fn) (void *), void *data, unsigned num_threads, unsigned i
   int anticThreads = omp_get_num_threads();
   if(!num_threads){
 	num_threads = omp_get_num_threads();
+  } else {    // He de tornar a iniciar les barreres pq canvia el num de threads
+  	omp_set_num_threads(num_threads);
+	pthread_barrier_init(&miniomp_barrier, NULL, num_threads);
+  	pthread_barrier_init(&miniomp_single.barrier, NULL, num_threads);
   }
-  omp_set_num_threads(num_threads);
   //printf("Starting a parallel region using %d threads\n", num_threads);
   miniomp_threads=malloc(sizeof(pthread_t)*num_threads);
   miniomp_parallel=malloc(sizeof(miniomp_parallel_t)*num_threads);

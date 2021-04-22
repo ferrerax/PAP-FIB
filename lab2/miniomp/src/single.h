@@ -1,6 +1,9 @@
 // Type declaration for single work sharing descriptor
 typedef struct {
     // complete the definition of single descriptor
+    int key;
+    pthread_mutex_t mutex;
+    pthread_barrier_t barrier;
 } miniomp_single_t;
 
 // Declaration of global variable for single work descriptor

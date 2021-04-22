@@ -8,6 +8,15 @@ miniomp_single_t miniomp_single;
 
 bool
 GOMP_single_start (void) {
-  printf("TBI: Entering into single, don't know if anyone else arrived before, I proceed\n");
-  return(!omp_get_thread_num());
+  //printf("TBI: Entering into single, don't know if anyone else arrived before, I proceed\n");
+  bool ret = false;
+  pthread_mutex_lock(&miniomp_single.mutex);
+  if (!miniomp_single.key){   //Puc executar la regió critica
+	ret = true;
+	miniomp_single.key++;
+  }	  
+  pthread_mutex_unlock(&miniomp_single.mutex);
+  pthread_barrier_wait(&miniomp_single.barrier); //Tots els threads s'han d'haver arribat abans de treure la key.
+  miniomp_single.key = 0;
+  return (ret);
 }

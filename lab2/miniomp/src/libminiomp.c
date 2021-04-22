@@ -15,7 +15,12 @@ init_miniomp(void) {
   pthread_key_create(&miniomp_specifickey, NULL);
   pthread_setspecific(miniomp_specifickey, (void *) 0); // implicit initial pthread with id=0
   // Initialize OpenMP default locks and default barrier
+  pthread_mutex_init(&miniomp_default_lock, NULL);
+  pthread_mutex_init(&miniomp_named_lock, NULL);
+  pthread_barrier_init(&miniomp_barrier, NULL, omp_get_num_threads());
   // Initialize OpenMP workdescriptors for single 
+  pthread_mutex_init(&miniomp_single.mutex, NULL);
+  pthread_barrier_init(&miniomp_single.barrier, NULL, omp_get_num_threads());
   // Initialize OpenMP task queue for task and taskloop
 }
 
