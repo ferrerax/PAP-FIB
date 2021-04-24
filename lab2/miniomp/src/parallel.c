@@ -23,6 +23,21 @@ worker(void *args) {
         pthread_setspecific(miniomp_specifickey, (void *)(intptr_t) thread->id);	
   //   2) invoke the per-threads instance of function encapsulating the parallel region
 	thread->fn(thread->fn_data);
+  //   3) Executar tasques 
+        pthread_mutex_lock(&miniomp_taskqueue->lock_queue);
+        bool test = TQis_empty(&miniomp_taskqueue)
+        pthread_mutex_unlock(&miniomp_taskqueue->lock_queue);
+        while(!test)
+        {
+            ...
+            //fes el que sigui
+            ...
+
+            pthread_mutex_lock(&miniomp_taskqueue->lock_queue);
+            test = TQis_empty(&miniomp_taskqueue)
+            pthread_mutex_unlock(&miniomp_taskqueue->lock_queue);
+
+        }
   //   3) exit the function
   pthread_exit(NULL);
 }

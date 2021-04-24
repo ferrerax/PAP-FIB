@@ -22,6 +22,7 @@ init_miniomp(void) {
   pthread_mutex_init(&miniomp_single.mutex, NULL);
   pthread_barrier_init(&miniomp_single.barrier, NULL, omp_get_num_threads());
   // Initialize OpenMP task queue for task and taskloop
+  miniomp_taskqueue = TQinit(10000); // li poso un numero ben grandot.
 }
 
 void

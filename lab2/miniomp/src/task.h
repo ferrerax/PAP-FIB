@@ -1,5 +1,5 @@
-/* This structure describes a "task" to be run by a thread.  */
-typedef struct {
+    /* This structure describes a "task" to be run by a thread.  */
+    typedef struct {
     void (*fn)(void *);
     void (*data);
     // complete with additional field if needed
@@ -8,10 +8,10 @@ typedef struct {
 typedef struct {
     int max_elements;
     int count;
-    int head;
+    miniomp_task_t * head; // un punter al cap
     int tail;
-    int first;
-    int lock_queue;
+    int first;    //un punter a l'index del vector que conte el primer element.
+    pthread_mutex_lock lock_queue; //per a que les consultes siguin atomiques.
     miniomp_task_t **queue;
     // complete with additional field if needed
 } miniomp_taskqueue_t;
