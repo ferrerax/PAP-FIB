@@ -15,7 +15,6 @@ miniomp_taskqueue_t *TQinit(int max_elements) {
     return taskqueue;
 }
 
-//AQUESTES FUNCIONS D'HAN DE CRIDAR AMB EL SEMAFOR DE LA CUA!!!!
 
 // Checks if the task queue is empty
 bool TQis_empty(miniomp_taskqueue_t *task_queue) {
@@ -34,6 +33,7 @@ bool TQis_full(miniomp_taskqueue_t *task_queue) {
 // Enqueues the task descriptor at the tail of the task queue
 bool TQenqueue(miniomp_taskqueue_t *task_queue, miniomp_task_t *task_descriptor) {
         bool a;
+        pthread_mutex_lock(&task_queue->lock_queue);
         if (TQis_full(task_queue))
             a = false;
         else 
@@ -45,13 +45,13 @@ bool TQenqueue(miniomp_taskqueue_t *task_queue, miniomp_task_t *task_descriptor)
             task_queue->tail++;
             a = true;
         }
-    return a;
+       pthread_mutex_unlock(&task_queue->lock_queue);
+       return a;
 }
 
 // Dequeue the task descriptor at the head of the task queue
 bool TQdequeue(miniomp_taskqueue_t *task_queue) { 
         bool a;
-        pthread_mutex_lock(&task_queue->lock_queue);
         if (TQis_empty(task_queue))
             a = false;
         else
@@ -61,17 +61,19 @@ bool TQdequeue(miniomp_taskqueue_t *task_queue) {
             task_queue->first++;
             if (task_queue->first == max_elements) task_queue->first = 0;
         }
-        pthread_mutex_unlock(&task_queue->lock_queue);
     return a;
 }
 
 // Returns the task descriptor at the head of the task queue. TAMBE FA DEQUEUE!!!
 miniomp_task_t *TQfirst(miniomp_taskqueue_t *task_queue) {
-        miniomp_task_t * task;
-        task = task_queue->head;
-       if(!TQdequeue(task_queue)){
+       miniomp_task_t * task;
+       pthread_mutex_lock(&task_queue->lock_queue);
+       if(TQdequeue(task_queue)){
+           task = task_queue->head;
+       } else {
            task = NULL; // si retorna fals es que no hi ha tasques a pillar
        }
+       pthread_mutex_unlock(&task_queue->lock_queue);
     return task;  // la historia esta buida retorna NULL
 }
 

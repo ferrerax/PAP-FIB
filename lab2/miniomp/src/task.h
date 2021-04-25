@@ -11,7 +11,7 @@ typedef struct {
     miniomp_task_t * head; // un punter al cap
     int tail;
     int first;    //un punter a l'index del vector que conte el primer element.
-    pthread_mutex_lock lock_queue; //per a que les consultes siguin atomiques.
+    pthread_mutex_t lock_queue; //per a que les consultes siguin atomiques.
     miniomp_task_t **queue;
     // complete with additional field if needed
 } miniomp_taskqueue_t;

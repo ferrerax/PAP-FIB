@@ -24,21 +24,12 @@ worker(void *args) {
   //   2) invoke the per-threads instance of function encapsulating the parallel region
 	thread->fn(thread->fn_data);
   //   3) Executar tasques 
-        pthread_mutex_lock(&miniomp_taskqueue->lock_queue);
-        bool test = TQis_empty(&miniomp_taskqueue)
-        pthread_mutex_unlock(&miniomp_taskqueue->lock_queue);
-        while(!test)
+        miniomp_task_t * task;
+        while((task = TQfirst(miniomp_taskqueue))!= NULL)  //Seguim tenint tasques a pillar
         {
-            ...
-            //fes el que sigui
-            ...
-
-            pthread_mutex_lock(&miniomp_taskqueue->lock_queue);
-            test = TQis_empty(&miniomp_taskqueue)
-            pthread_mutex_unlock(&miniomp_taskqueue->lock_queue);
-
+           task->fn(task->data);
         }
-  //   3) exit the function
+  //   4) exit the function
   pthread_exit(NULL);
 }
 
