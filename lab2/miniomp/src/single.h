@@ -4,6 +4,7 @@ typedef struct {
     int key;
     pthread_mutex_t mutex;
     pthread_barrier_t barrier;
+//    bool single;
 } miniomp_single_t;
 
 // Declaration of global variable for single work descriptor

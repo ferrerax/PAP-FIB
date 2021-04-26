@@ -45,4 +45,5 @@ void
 GOMP_barrier() {
   //printf("TBI: Entering in barrier, but do not know how to wait for the rest. I proceed\n");
   pthread_barrier_wait(&miniomp_barrier);
+  buida_cua_tasques();
 }

@@ -36,7 +36,7 @@ bool TQis_full(miniomp_taskqueue_t *task_queue) {
 // Enqueues the task descriptor at the tail of the task queue
 bool TQenqueue(miniomp_taskqueue_t *task_queue, miniomp_task_t *task_descriptor) {
         bool a;
-        pthread_mutex_lock(&task_queue->lock_queue);
+        pthread_mutex_lock(&(task_queue->lock_queue));
         if (TQis_full(task_queue))
             a = false;
         else 
@@ -46,7 +46,6 @@ bool TQenqueue(miniomp_taskqueue_t *task_queue, miniomp_task_t *task_descriptor)
             task_queue->queue[task_queue->tail] = task_descriptor;
             if (task_queue->head == NULL) task_queue->head = task_descriptor;
             task_queue->tail++;
-            printf("thread %d ha posat la tasca %p\n", omp_get_thread_num(),task_descriptor);
             a = true;
         }
        pthread_mutex_unlock(&task_queue->lock_queue);
@@ -60,33 +59,26 @@ bool TQdequeue(miniomp_taskqueue_t *task_queue) {
             a = false;
         else
         {
-            printf("Punter %p, thread %d\n", task_queue->head, omp_get_thread_num());
             free(task_queue->head); //borro
             task_queue->count -= 1;
             task_queue->first++;
-            //task_queue->head = task_queue->queue[task_queue->first];
+            task_queue->head = task_queue->queue[task_queue->first];
             if (task_queue->first == task_queue->max_elements) task_queue->first = 0;
         }
     return a;
 }
 
 // Returns the task descriptor at the head of the task queue. TAMBE FA DEQUEUE!!!
-bool TQfirst(miniomp_taskqueue_t *task_queue, miniomp_task_t * task_return) {
-       bool a;
-       miniomp_task_t task;
+miniomp_task_t *TQfirst(miniomp_taskqueue_t *task_queue) {
+       miniomp_task_t * task;
        pthread_mutex_lock(&task_queue->lock_queue);
-       if(TQis_empty(task_queue)){
-           a = false; // si retorna fals es que no hi ha tasques a pillar
+       if(TQdequeue(task_queue)){
+           task = task_queue->head;
        } else {
-           miniomp_task_t * p_task = task_queue->queue[task_queue->first];
-           printf("obtinc la tasca %p de la posicio %d del vector",p_task,task_queue->first);
-           task = *p_task;
-           TQdequeue(task_queue);
-           a = true;
+           task = NULL; // si retorna fals es que no hi ha tasques a pillar
        }
        pthread_mutex_unlock(&task_queue->lock_queue);
-       *task_return = task;  // la historia esta buida retorna NULL
-       return a;
+    return task;  // la historia esta buida retorna NULL
 }
 
 #define GOMP_TASK_FLAG_UNTIED           (1 << 0)
@@ -137,32 +129,25 @@ GOMP_task (void (*fn) (void *), void *data, void (*cpyfn) (void *, void *),
         task->taskgroup=true;
         miniomp_taskqueue->taskgroup_tasks++;
     }
-    else 
-    {
+    else{
         task->taskgroup=false;
     } 
-    printf("creo tasca %p amb fn %p, data %p\n",task,task->fn,data);
     if (! TQenqueue(miniomp_taskqueue,task)) {
-        printf("check1\n");
         perror("No s'ha pogut inserir la nova tasca a la cua de tasques");
         exit(1);
     }
-    
-        printf("check2\n");
+
     printf("TBI: thread %d surt del task\n", omp_get_thread_num());
 }
 
 //Funcio per a l'execucio de la cua de tasques
 
 void buida_cua_tasques(){
-    miniomp_task_t task;
-    bool hi_ha_tasks = TQfirst(miniomp_taskqueue, &task);
-    while(hi_ha_tasks)  //Seguim tenint tasques a pillar
+    miniomp_task_t * task;
+    while((task = TQfirst(miniomp_taskqueue))!= NULL)  //Seguim tenint tasques a pillar
     {
-       //printf("Executo la tasca %p\n", task);
-       //printf("Amb la funcio %p\n", task->fn);
-       if (task.taskgroup)
+       if (task->taskgroup)
            miniomp_taskqueue->taskgroup_tasks--;
-       task.fn(task.data);
+       task->fn(task->data);
     }
 }

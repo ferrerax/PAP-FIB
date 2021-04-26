@@ -2,7 +2,7 @@
     typedef struct {
     void (*fn)(void *);
     void (*data);
-    // complete with additional field if needed
+    bool taskgroup;
 } miniomp_task_t;
 
 typedef struct {
@@ -13,7 +13,9 @@ typedef struct {
     int first;    //un punter a l'index del vector que conte el primer element.
     pthread_mutex_t lock_queue; //per a que les consultes siguin atomiques.
     miniomp_task_t **queue;
-    // complete with additional field if needed
+    pthread_barrier_t barrier;
+    int taskgroup_tasks;
+    bool taskgroup;
 } miniomp_taskqueue_t;
 
 extern miniomp_taskqueue_t * miniomp_taskqueue;
@@ -25,7 +27,7 @@ bool TQis_empty(miniomp_taskqueue_t *task_queue);
 bool TQis_full(miniomp_taskqueue_t *task_queue) ;
 bool TQenqueue(miniomp_taskqueue_t *task_queue, miniomp_task_t *task_descriptor); 
 bool TQdequeue(miniomp_taskqueue_t *task_queue);
-miniomp_task_t *TQfirst(miniomp_taskqueue_t *task_queue); 
+bool TQfirst(miniomp_taskqueue_t *task_queue,miniomp_task_t * task_return); 
 
 // Functions implemented in task* modules
 void GOMP_task (void (*fn) (void *), void *data, void (*cpyfn) (void *, void *),
@@ -42,3 +44,6 @@ void GOMP_taskgroup_reduction_register (uintptr_t *data);
 void GOMP_taskgroup_reduction_unregister (uintptr_t *data);
 void GOMP_task_reduction_remap (size_t cnt, size_t cntorig, void **ptrs);
 
+
+
+void buida_cua_tasques();
