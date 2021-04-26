@@ -8,13 +8,14 @@ GOMP_taskwait (void)
 {
 //    printf("TBI: Entered in taskwait, there should be no pending tasks, so I proceed\n");
     buida_cua_tasques();
-    __atomic_sub_fetch(&executant,1,__ATOMIC_RELAXED); // shan acabat les tasquest i ho indico
-    printf("Soc el thread %d i executant ara val %d perque estic en un taskwait", omp_get_thread_num(), executant);
-    //em poso en espera activa pq hi ha threads que podrien crear tasques.
-    while(executant)  //Aixo es molt poc eficient --> molts fallos en cache!!!! cal millorar.
-        buida_cua_tasques();
-    pthread_barrier_wait(&miniomp_taskqueue->barrier); //Esperem fins que tots han executat les tasques que esperaven.
-    executant = omp_get_num_threads();
+    printf("SUUUUURTOOOOOOOO\n");
+//    __atomic_sub_fetch(&executant,1,__ATOMIC_RELAXED); // shan acabat les tasquest i ho indico
+//    printf("Soc el thread %d i executant ara val %d perque estic en un taskwait", omp_get_thread_num(), executant);
+//    //em poso en espera activa pq hi ha threads que podrien crear tasques.
+//    while(executant)  //Aixo es molt poc eficient --> molts fallos en cache!!!! cal millorar.
+//        buida_cua_tasques();
+//    pthread_barrier_wait(&miniomp_taskqueue->barrier); //Esperem fins que tots han executat les tasques que esperaven.
+//    executant = omp_get_num_threads();
 }
 
 void
