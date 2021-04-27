@@ -7,7 +7,7 @@ miniomp_taskqueue_t *TQinit(int max_elements) {
     miniomp_taskqueue_t * taskqueue = malloc(sizeof(miniomp_taskqueue_t));
     taskqueue->max_elements = max_elements;
     taskqueue->count = 0;
-    taskqueue->head = NULL;
+//    taskqueue->head = NULL;
     taskqueue->tail = 0;
     taskqueue->first = 0;
     taskqueue->queue=malloc(max_elements*sizeof(miniomp_task_t *));
@@ -44,9 +44,9 @@ bool TQenqueue(miniomp_taskqueue_t *task_queue, miniomp_task_t *task_descriptor)
             if (task_queue->tail >= task_queue->max_elements) task_queue->tail = 0;  //la volta al buffer circular.
             task_queue->count++;
             task_queue->queue[task_queue->tail] = task_descriptor;
-            if (task_queue->head == NULL) task_queue->head = task_descriptor;
+            //if ( == NULL) task_queue->head = task_descriptor;
             task_queue->tail++;
-            printf("thread %d ha posat la tasca %p\n", omp_get_thread_num(),task_descriptor);
+            //printf("thread %d ha posat la tasca %p\n", omp_get_thread_num(),task_descriptor);
             a = true;
         }
        pthread_mutex_unlock(&task_queue->lock_queue);
@@ -60,8 +60,8 @@ bool TQdequeue(miniomp_taskqueue_t *task_queue) {
             a = false;
         else
         {
-            printf("Punter %p, thread %d\n", task_queue->head, omp_get_thread_num());
-            free(task_queue->head); //borro
+            //printf("Punter %p, thread %d\n", task_queue->head, omp_get_thread_num());
+            free(task_queue->queue[task_queue->first]); //borro
             task_queue->count -= 1;
             task_queue->first++;
             //task_queue->head = task_queue->queue[task_queue->first];
@@ -79,7 +79,7 @@ bool TQfirst(miniomp_taskqueue_t *task_queue, miniomp_task_t * task_return) {
            a = false; // si retorna fals es que no hi ha tasques a pillar
        } else {
            miniomp_task_t * p_task = task_queue->queue[task_queue->first];
-           printf("obtinc la tasca %p de la posicio %d del vector",p_task,task_queue->first);
+           //printf("obtinc la tasca %p de la posicio %d del vector",p_task,task_queue->first);
            task = *p_task;
            TQdequeue(task_queue);
            a = true;
@@ -115,7 +115,7 @@ GOMP_task (void (*fn) (void *), void *data, void (*cpyfn) (void *, void *),
            long arg_size, long arg_align, bool if_clause, unsigned flags,
            void **depend, int priority)
 {
-    printf("TBI: thread %d entra al task\n", omp_get_thread_num());
+    //printf("TBI: thread %d entra al task\n", omp_get_thread_num());
 
     // This part of the code appropriately copies data to be passed to task function,
     // either using a compiler cpyfn function or just memcopy otherwise; no need to
@@ -141,15 +141,13 @@ GOMP_task (void (*fn) (void *), void *data, void (*cpyfn) (void *, void *),
     {
         task->taskgroup=false;
     } 
-    printf("creo tasca %p amb fn %p, data %p\n",task,task->fn,data);
+    //printf("creo tasca %p amb fn %p, data %p\n",task,task->fn,data);
     if (! TQenqueue(miniomp_taskqueue,task)) {
-        printf("check1\n");
         perror("No s'ha pogut inserir la nova tasca a la cua de tasques");
         exit(1);
     }
     
-        printf("check2\n");
-    printf("TBI: thread %d surt del task\n", omp_get_thread_num());
+    //printf("TBI: thread %d surt del task\n", omp_get_thread_num());
 }
 
 //Funcio per a l'execucio de la cua de tasques
@@ -164,5 +162,6 @@ void buida_cua_tasques(){
        if (task.taskgroup)
            miniomp_taskqueue->taskgroup_tasks--;
        task.fn(task.data);
+       hi_ha_tasks = TQfirst(miniomp_taskqueue, &task);
     }
 }

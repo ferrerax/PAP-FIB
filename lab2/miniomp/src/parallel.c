@@ -36,7 +36,7 @@ worker(void *args) {
         while(executant)  //Aixo es molt poc eficient --> molts fallos en cache!!!! cal millorar.
             buida_cua_tasques();
   //   4) exit the function
-  printf("El thread %d ha acabat definitivament", omp_get_thread_num());
+  printf("El thread %d ha acabat definitivament\n", omp_get_thread_num());
   pthread_exit(NULL);
 }
 

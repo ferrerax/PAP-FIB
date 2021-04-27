@@ -8,7 +8,7 @@
 typedef struct {
     int max_elements;
     int count;
-    miniomp_task_t * head; // un punter al cap
+//    miniomp_task_t * head; // un punter al cap
     int tail;
     int first;    //un punter a l'index del vector que conte el primer element.
     pthread_mutex_t lock_queue; //per a que les consultes siguin atomiques.

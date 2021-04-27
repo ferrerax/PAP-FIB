@@ -7,8 +7,9 @@ void
 GOMP_taskwait (void)
 {
 //    printf("TBI: Entered in taskwait, there should be no pending tasks, so I proceed\n");
+
     buida_cua_tasques();
-    printf("SUUUUURTOOOOOOOO\n");
+
 //    __atomic_sub_fetch(&executant,1,__ATOMIC_RELAXED); // shan acabat les tasquest i ho indico
 //    printf("Soc el thread %d i executant ara val %d perque estic en un taskwait", omp_get_thread_num(), executant);
 //    //em poso en espera activa pq hi ha threads que podrien crear tasques.
