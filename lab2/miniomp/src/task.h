@@ -16,6 +16,7 @@ typedef struct {
     pthread_barrier_t barrier;
     int taskgroup_tasks;
     bool taskgroup;
+    int taskwaitcount;
 } miniomp_taskqueue_t;
 
 extern miniomp_taskqueue_t * miniomp_taskqueue;

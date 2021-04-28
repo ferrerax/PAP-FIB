@@ -7,8 +7,8 @@ void
 GOMP_taskwait (void)
 {
 //    printf("TBI: Entered in taskwait, there should be no pending tasks, so I proceed\n");
-
-    buida_cua_tasques();
+    while(miniomp_taskqueue->taskwaitcount)
+        buida_cua_tasques();
 
 //    __atomic_sub_fetch(&executant,1,__ATOMIC_RELAXED); // shan acabat les tasquest i ho indico
 //    printf("Soc el thread %d i executant ara val %d perque estic en un taskwait", omp_get_thread_num(), executant);
@@ -34,11 +34,12 @@ GOMP_taskgroup_end (void)
     while(miniomp_taskqueue->taskgroup_tasks){
         buida_cua_tasques();
     }
-    __atomic_sub_fetch(&executant,1,__ATOMIC_RELAXED); // shan acabat les tasquest i ho indico
-    printf("Soc el thread %d i executant ara val %d perque estic en un end taskgroup", omp_get_thread_num(), executant);
-    while(executant || miniomp_taskqueue->taskgroup_tasks)  
-        buida_cua_tasques();
-    pthread_barrier_wait(&miniomp_taskqueue->barrier); 
-    executant = omp_get_num_threads();
+    //__atomic_sub_fetch(&executant,1,__ATOMIC_RELAXED); // shan acabat les tasquest i ho indico
+    //printf("Soc el thread %d i executant ara val %d perque estic en un taskgroup\n", omp_get_thread_num(), executant);
+   // while(miniomp_taskqueue->taskgroup_tasks)  
+   //     buida_cua_tasques();
+   // printf("Soc el thread %d i surto del taskgroup\n", omp_get_thread_num());
+    //pthread_barrier_wait(&miniomp_taskqueue->barrier); 
+    //executant = omp_get_num_threads();
     miniomp_taskqueue->taskgroup=false;
 }

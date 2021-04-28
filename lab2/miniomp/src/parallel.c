@@ -31,12 +31,11 @@ worker(void *args) {
         buida_cua_tasques(); //Poso el thread a executar tasques
         //Atencio que aqui m'he marcat un triple, pot estar mal -->https://gcc.gnu.org/onlinedocs/gcc/_005f_005fatomic-Builtins.html#g_t_005f_005fatomic-Builtins
         __atomic_sub_fetch(&executant,1,__ATOMIC_RELAXED); // shan acabat les tasquest i ho indico
-        printf("Soc el thread %d i executant ara val %d perque he acabat la execucio\n",omp_get_thread_num(), executant);
-        //em poso en espera activa pq hi ha threads que podrien crear tasques.
+        //em poso en espera activa pq hi ha threads que podrien crear tasques. Quan tots els threads arribin en aquest punt marxarem. De mentres esperarem a la possibilitat de que es crein tasks noves.
         while(executant)  //Aixo es molt poc eficient --> molts fallos en cache!!!! cal millorar.
             buida_cua_tasques();
   //   4) exit the function
-  printf("El thread %d ha acabat definitivament\n", omp_get_thread_num());
+  printf("El thread %d ha acabat definitivament\n", omp_get_thread_num()); //S'ha acabat la feina de tots els threads.
   pthread_exit(NULL);
 }
 
@@ -68,7 +67,7 @@ GOMP_parallel (void (*fn) (void *), void *data, unsigned num_threads, unsigned i
 	pthread_create(&miniomp_threads[i],NULL,&worker,&miniomp_parallel[i]);
   }     
   fn (data);
-  buida_cua_tasques();  // el main thread tambe ha de buidar la cua de tasques!!
+  while(executant) buida_cua_tasques();  // el main thread tambe ha de buidar la cua de tasques!!
   printf("Soc el thread 0 he acabat. No executare mes tasques.\n");
   for (int i=1; i<num_threads; i++){
 	pthread_join(miniomp_threads[i],NULL);  //Barrera implicita.

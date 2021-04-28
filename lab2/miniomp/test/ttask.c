@@ -15,18 +15,21 @@ void foo() {
     int argum = 1;
     #pragma omp task  shared(result) firstprivate(argum)
     for (long i = 0; i < 10; i++) {
+        printf("Soc el thread %d en l'execucio del primer bucle. Result es %ld i argument es %d\n",omp_get_thread_num(),result, argum);
 	#pragma omp atomic
         result += argum;
         }
-
+    
     for (long i = 0; i < 10; i++) {
         argum++;
         #pragma omp task shared(result) firstprivate(argum)
 	#pragma omp atomic
         result += argum;
+        printf("Soc el thread %d en l'execucio del segon bucle. Result es %ld i argument es %d\n",omp_get_thread_num(),result, argum);
         }
-
+//    printf("Soc el thread %d i estic al taskwait\n",omp_get_thread_num());
     #pragma omp taskwait
+//    printf("Soc el thread %d i he sortit del taskwait\n",omp_get_thread_num());
 
     #pragma omp task firstprivate(result) firstprivate(argum)
     printf("Hello from third task, up to now result=%ld and argum = %d\n", result, argum);

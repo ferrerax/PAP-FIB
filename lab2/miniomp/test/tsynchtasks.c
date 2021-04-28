@@ -39,11 +39,10 @@ void foo() {
     for (long i = 0; i < 10; i++) {
 	#pragma omp atomic
         result += argum;
-        }
+       }
 
     printf("Here I am waiting only for the termination of the two computation loops ...\n");
     }
-
     argum = result;
 
     for (long i = 0; i < 10; i++) {

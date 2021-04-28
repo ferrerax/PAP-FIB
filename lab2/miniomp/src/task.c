@@ -15,6 +15,7 @@ miniomp_taskqueue_t *TQinit(int max_elements) {
     pthread_barrier_init(&taskqueue->barrier, NULL, omp_get_num_threads());
     taskqueue->taskgroup_tasks=0;
     taskqueue->taskgroup=false;
+    taskqueue->taskwaitcount=0;
     return taskqueue;
 }
 
@@ -35,20 +36,16 @@ bool TQis_full(miniomp_taskqueue_t *task_queue) {
 
 // Enqueues the task descriptor at the tail of the task queue
 bool TQenqueue(miniomp_taskqueue_t *task_queue, miniomp_task_t *task_descriptor) {
-        bool a;
-        pthread_mutex_lock(&task_queue->lock_queue);
-        if (TQis_full(task_queue))
-            a = false;
-        else 
-        {
-            if (task_queue->tail >= task_queue->max_elements) task_queue->tail = 0;  //la volta al buffer circular.
-            task_queue->count++;
-            task_queue->queue[task_queue->tail] = task_descriptor;
-            //if ( == NULL) task_queue->head = task_descriptor;
-            task_queue->tail++;
-            //printf("thread %d ha posat la tasca %p\n", omp_get_thread_num(),task_descriptor);
-            a = true;
-        }
+       bool a;
+       pthread_mutex_lock(&task_queue->lock_queue);
+       while(TQis_full(task_queue)); //La cua esta plena
+       a = false;
+       task_queue->count++;
+       task_queue->queue[task_queue->tail] = task_descriptor;
+       //if ( == NULL) task_queue->head = task_descriptor;
+       task_queue->tail++;
+       if (task_queue->tail >= task_queue->max_elements) task_queue->tail = 0;  //la volta al buffer circular.
+       a = true;
        pthread_mutex_unlock(&task_queue->lock_queue);
        return a;
 }
@@ -132,10 +129,10 @@ GOMP_task (void (*fn) (void *), void *data, void (*cpyfn) (void *, void *),
     }
     miniomp_task_t * task = malloc(sizeof(miniomp_task_t));
     task->fn = fn; //carrego la funcio
-    task->data = data; //obtinc les dades 
+    task->data = arg; //obtinc les dades 
     if (miniomp_taskqueue->taskgroup) {
         task->taskgroup=true;
-        miniomp_taskqueue->taskgroup_tasks++;
+        __atomic_add_fetch(&miniomp_taskqueue->taskgroup_tasks,1,__ATOMIC_RELAXED); //Cal que sigui atomic?
     }
     else 
     {
@@ -145,7 +142,8 @@ GOMP_task (void (*fn) (void *), void *data, void (*cpyfn) (void *, void *),
     if (! TQenqueue(miniomp_taskqueue,task)) {
         perror("No s'ha pogut inserir la nova tasca a la cua de tasques");
         exit(1);
-    }
+    } 
+    __atomic_add_fetch(&miniomp_taskqueue->taskwaitcount,1,__ATOMIC_RELAXED);
     
     //printf("TBI: thread %d surt del task\n", omp_get_thread_num());
 }
@@ -157,11 +155,12 @@ void buida_cua_tasques(){
     bool hi_ha_tasks = TQfirst(miniomp_taskqueue, &task);
     while(hi_ha_tasks)  //Seguim tenint tasques a pillar
     {
-       //printf("Executo la tasca %p\n", task);
+       //printf("Thread %d, Executo la tasca %p\n", omp_get_thread_num(),&task);
        //printf("Amb la funcio %p\n", task->fn);
-       if (task.taskgroup)
-           miniomp_taskqueue->taskgroup_tasks--;
        task.fn(task.data);
+       if (task.taskgroup)
+           __atomic_sub_fetch(&miniomp_taskqueue->taskgroup_tasks,1,__ATOMIC_RELAXED);
+       __atomic_sub_fetch(&miniomp_taskqueue->taskwaitcount,1,__ATOMIC_RELAXED);
        hi_ha_tasks = TQfirst(miniomp_taskqueue, &task);
     }
 }
