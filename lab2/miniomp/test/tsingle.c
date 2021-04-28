@@ -8,7 +8,7 @@ void foo(){
     #pragma omp parallel
     {
         for (int i = 0; i < 10; i++) {
-            #pragma omp single // nowait
+            #pragma omp single nowait
             {
                 printf("Hello! I'm thread %d in first loop - iteration %d\n", 
                        omp_get_thread_num(), i);
