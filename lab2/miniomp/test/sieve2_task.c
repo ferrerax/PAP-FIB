@@ -77,7 +77,6 @@ int eratosthenes(int lastNumber, int sliceSize)
   #pragma omp single
 	{
 	  // each slice covers ["from" ... "to"], incl. "from" and "to"
-            printf("CHECK");
 	  for (int from = 2; from <= lastNumber; from += sliceSize) {
 	    int to = from + sliceSize;
 	    if (to > lastNumber) to = lastNumber;
@@ -112,7 +111,7 @@ int main(int argc, char ** argv) {
 #ifdef _OPENMP
     if (argc != 4) {
 #else
-    if (argc != 3) {
+    if (argc != 4) {
 #endif
         printf("Error: Invalid number of arguments\n");
         usage();

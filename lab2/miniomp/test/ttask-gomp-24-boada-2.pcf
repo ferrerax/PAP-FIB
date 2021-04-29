@@ -119,9 +119,9 @@ VALUES
 1 0 (Unresolved)
 2 0 (_NOT_Found)
 3 12 (ttask.c, ttask-gomp)
-4 19 (ttask.c, ttask-gomp)
-5 26 (ttask.c, ttask-gomp)
-6 32 (ttask.c, ttask-gomp)
+4 16 (ttask.c, ttask-gomp)
+5 27 (ttask.c, ttask-gomp)
+6 35 (ttask.c, ttask-gomp)
 
 
 EVENT_TYPE
@@ -143,9 +143,9 @@ VALUES
 1 0 (Unresolved)
 2 0 (_NOT_Found)
 3 12 (ttask.c, ttask-gomp)
-4 19 (ttask.c, ttask-gomp)
-5 26 (ttask.c, ttask-gomp)
-6 32 (ttask.c, ttask-gomp)
+4 16 (ttask.c, ttask-gomp)
+5 27 (ttask.c, ttask-gomp)
+6 35 (ttask.c, ttask-gomp)
 
 
 EVENT_TYPE
@@ -167,9 +167,9 @@ VALUES
 1 0 (Unresolved)
 2 0 (_NOT_Found)
 3 12 (ttask.c, ttask-gomp)
-4 19 (ttask.c, ttask-gomp)
-5 26 (ttask.c, ttask-gomp)
-6 32 (ttask.c, ttask-gomp)
+4 16 (ttask.c, ttask-gomp)
+5 27 (ttask.c, ttask-gomp)
+6 35 (ttask.c, ttask-gomp)
 
 
 EVENT_TYPE
@@ -204,9 +204,9 @@ VALUES
 1 0 (Unresolved)
 2 0 (_NOT_Found)
 3 12 (ttask.c, ttask-gomp)
-4 19 (ttask.c, ttask-gomp)
-5 26 (ttask.c, ttask-gomp)
-6 32 (ttask.c, ttask-gomp)
+4 16 (ttask.c, ttask-gomp)
+5 27 (ttask.c, ttask-gomp)
+6 35 (ttask.c, ttask-gomp)
 
 
 EVENT_TYPE

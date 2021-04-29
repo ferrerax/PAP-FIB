@@ -35,7 +35,7 @@ worker(void *args) {
         while(executant)  //Aixo es molt poc eficient --> molts fallos en cache!!!! cal millorar.
             buida_cua_tasques();
   //   4) exit the function
-  printf("El thread %d ha acabat definitivament\n", omp_get_thread_num()); //S'ha acabat la feina de tots els threads.
+  //printf("El thread %d ha acabat definitivament\n", omp_get_thread_num()); //S'ha acabat la feina de tots els threads.
   pthread_exit(NULL);
 }
 
@@ -68,7 +68,7 @@ GOMP_parallel (void (*fn) (void *), void *data, unsigned num_threads, unsigned i
   }     
   fn (data);
   while(executant) buida_cua_tasques();  // el main thread tambe ha de buidar la cua de tasques!!
-  printf("Soc el thread 0 he acabat. No executare mes tasques.\n");
+  //printf("Soc el thread 0 he acabat. No executare mes tasques.\n");
   for (int i=1; i<num_threads; i++){
 	pthread_join(miniomp_threads[i],NULL);  //Barrera implicita.
   }

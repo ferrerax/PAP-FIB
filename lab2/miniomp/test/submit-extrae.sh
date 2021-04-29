@@ -28,6 +28,6 @@ export OMP_NUM_THREADS=$2
 
 export LD_PRELOAD=${EXTRAE_HOME}/lib/libomptrace.so
 
-./$1 
+./$1 100000000 10000 24 
 unset LD_PRELOAD
 mpi2prv -f TRACE.mpits -o $1-$2-${HOST}.prv -e $1 -paraver

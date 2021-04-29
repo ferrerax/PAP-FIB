@@ -13,10 +13,11 @@ GOMP_single_start (void) {
   pthread_mutex_lock(&miniomp_single.mutex);
   if (!miniomp_single.key){   //Puc executar la regió critica
 	ret = true;
+        pthread_barrier_init(&miniomp_single.barrier,NULL,omp_get_num_threads());
 	miniomp_single.key++;
   }	  
   pthread_mutex_unlock(&miniomp_single.mutex);
-  pthread_barrier_wait(&miniomp_single.barrier); //Tots els threads s'han d'haver arribat abans de treure la key.
+  pthread_barrier_wait(&miniomp_single.barrier); //Tots els threads han d'haver arribat abans de treure la key.
   miniomp_single.key = 0;
   return (ret);
 }

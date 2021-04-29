@@ -16,7 +16,7 @@ fi
 
 SEQ=$1-seq
 PROG=$1-omp
-size=100000000
+size=1000000000
 block=100000
 np_NMIN=1
 np_NMAX=24
