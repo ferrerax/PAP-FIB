@@ -1,0 +1,196 @@
+#! /bin/bash
+
+
+PARAMS=()
+N=1
+TIME='/usr/bin/time -f "%U_%S_%e_%P"'
+TMPOUT=$(mktemp /tmp/autopca.XXXXXXXXX)
+TMPERR=$(mktemp /tmp/autopca.XXXXXXXXX)
+TMPGOLD=$(mktemp /tmp/autopca.goldXXXX)
+VERB=0
+GOLDEN=0
+
+clean() {
+ if [ -f $TMPOUT ]; then
+   rm $TMPOUT;
+ fi
+ if [ -f $TMPERR ]; then
+   rm $TMPERR;
+ fi
+ if [ -f $TMPGOLD ]; then
+   rm $TMPGOLD;
+ fi
+
+
+}
+usage(){
+  echo -e "Usage: autopca -e <file> [options] [arguments]\n\noptions:\n\t-e,--executable <file>\t\tExecutable optimitzat\n\t-n,--ntimes <N>\t\t\tExecuta N cops l'executable\n\t-g,--golden-exe <golden-file>\tFitxer original, sense optimitzacions\n\t-v,--verbose\t\t\tMes info\n\t-h,--help\t\t\tPrinta aixo i surt"
+  clean
+  exit 1
+}
+
+parseargs() {
+
+  if [[ $# -eq 1 ]]; then
+    usage
+  fi
+  while (("$#")); do
+    case "$1" in
+      -e|--executable)
+        if [ -n "$2" ] && [ ${2:0:1} != "-" ]; then
+          EXECUTABLE="$2"
+          shift 2 # past argument i value
+        else
+          usage
+        fi
+        ;;
+      -g|--golden-exe)
+        if [ -n "$2" ] && [ ${2:0:1} != "-" ]; then
+          GOLDENEXE="$2"
+          GOLDEN=1
+          shift 2 # past argument i value
+        else
+          usage
+        fi
+        ;;
+
+      -n|--ntimes)
+        if [ -n "$2" ] && [ ${2:0:1} != "-" ]; then
+          N=$2
+          shift 2
+        else 
+          usage
+        fi
+        ;;
+      -v|--verbose)
+        VERB=1
+        shift
+        ;;
+      -h|--help)
+        usage
+        ;;
+      *)    # unknown option
+        PARAMS+=("$1") # save it in an array ARGS
+        shift # past argument
+        ;;
+
+    esac
+  done
+  set -- "${PARAMS[@]}" # restore positional parameters
+}
+
+
+printerr(){
+  echo -e "\e[31;1m[-]\t$1\e[0m" >&2
+  clean
+  exit 1;
+}
+
+printinfo(){
+  echo -e "\e[1m[i]\t$1\e[0m"
+}
+printverb() {
+
+ [[ $VERB -eq 1 ]] &&  echo -e "\e[90;1m[v]\t$1\e[0m" >&2
+}
+
+checkargs(){
+  if ! [ -f $EXECUTABLE ]; then
+    printerr "No s'ha trobat el fitxer $EXECUTABLE"
+  fi
+  if [ -n "$GOLDENEXE" ] && ! [ -f $GOLDENEXE ]; then
+    printerr "No s'ha trobat el fitxer $GOLDENEXE"
+  fi
+  ## check outputs
+  if (( $GOLDEN )); then 
+    printinfo "Comparant els outputs dels executables..."
+    $GOLDENEXE ${PARAMS[@]} > $TMPGOLD
+    $EXECUTABLE ${PARAMS[@]} > $TMPOUT
+    if [ -n "$(diff $TMPGOLD $TMPOUT)" ]; then
+      (( $VERBOSE )) && diff $TMPGOLD $TMPOUT
+      printerr "Els output no estan goldens"
+    fi
+  fi   
+}
+
+getstats() {
+
+  # Executem N cops i calculem maxim minim i mitjana
+  printinfo "Acounting de $1, numero de repeticions: $N"
+  MAX_E=-1
+  MIN_E=9999999999999999999999999999999999999
+  SUM_E=0
+  MAX_CPU=0
+  MIN_CPU=1000
+  SUM_CPU=0
+  MAX_CPUTIME=0
+  MIN_CPUTIME=99999999999999999999999999999999
+  SUM_CPUTIME=0
+
+  for ((i=1; i<=$N; i++)) 
+  do
+    /usr/bin/time -f "%U %S %e %P" $1 ${PARAMS[@]} > $TMPOUT 2> $TMPERR
+    OUT=($(<$TMPERR))
+
+    USER=${OUT[0]}
+    SYS=${OUT[1]}
+    ELAPSED=${OUT[2]}
+    CPU=${OUT[3]%%\%}
+    CPUTIME=$( echo "$USER + $SYS" | bc -l)
+
+    printverb  "Execucio $i - user: $USER, sys: $SYS, elapsed: $ELAPSED, cpu: $CPU%";
+    SUM_E=$( echo " $SUM_E + $ELAPSED" | bc -l )
+    SUM_CPU=$( echo " $SUM_CPU + $CPU" | bc -l )
+    SUM_CPUTIME=$( echo " $SUM_CPUTIME + $CPUTIME" | bc -l )
+    if (( $(echo "$ELAPSED > $MAX_E" | bc -l ) ));then
+      MAX_E=$ELAPSED
+    fi
+    if (( $(echo "$ELAPSED < $MIN_E" | bc -l ) ));then
+      MIN_E=$ELAPSED
+    fi
+    if (( $(echo "$CPU > $MAX_CPU" | bc -l ) ));then
+      MAX_CPU=$CPU
+    fi
+    if (( $(echo "$CPU < $MIN_CPU" | bc -l ) ));then
+      MIN_CPU=$CPU
+    fi
+    if (( $(echo "$CPUTIME > $MAX_CPUTIME" | bc -l ) ));then
+      MAX_CPUTIME=$CPUTIME
+    fi
+    if (( $(echo "$CPUTIME < $MIN_CPUTIME" | bc -l ) ));then
+      MIN_CPUTIME=$CPUTIME
+    fi
+
+    MAX_E=$( echo -e "scale=4\n0 + $MAX_E" | bc -l)
+    MIN_E=$( echo -e "scale=4\n0 + $MIN_E" | bc -l)
+
+  done 
+  AVG_E=$( echo -e "scale=4\n$SUM_E/$N" | bc -l)
+  AVG_CPU=$( echo -e "scale=2\n$SUM_CPU/$N" | bc -l)
+  AVG_CPUTIME=$( echo -e "scale=4\n$SUM_CPUTIME/$N" | bc -l)
+  echo -e "\n\tMax. elapsed:\t$MAX_E seconds\n\tMin. elapsed:\t$MIN_E seconds\n\tAvg. elapsed:\t$AVG_E seconds\n\n\tMax. CPU time:\t$MAX_CPUTIME seconds\n\tMin. CPU time:\t$MIN_CPUTIME seconds\n\tAvg. CPU time:\t$AVG_CPUTIME seconds\n\n\tMax. CPU:\t$MAX_CPU%\n\tMin. CPU:\t$MIN_CPU%\n\tAvg. CPU:\t$AVG_CPU%\n"
+
+  clean
+  retval=("$AVG_E" "$AVG_CPUTIME")
+  
+}
+
+
+### MAIN ####
+
+
+parseargs $@
+checkargs
+
+if (( $GOLDEN )); then
+  getstats $GOLDENEXE 
+  goldenvals=(${retval[@]})
+fi
+getstats $EXECUTABLE
+
+if (( $GOLDEN )); then
+  printinfo "Calcul del Speedup"
+  SPEED_E=$( echo -e "scale=4\n${goldenvals[0]}/${retval[0]} " | bc -l )
+  SPEED_CPU=$( echo -e "scale=4\n${goldenvals[1]}/${retval[1]} " | bc -l )
+  echo -e "\tSpeedup elapsed: $SPEED_E\n\tSpeedup CPU: $SPEED_CPU"
+fi
