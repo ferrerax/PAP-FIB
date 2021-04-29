@@ -113,7 +113,7 @@ int main(int argc, char ** argv) {
 #ifdef _OPENMP
     if (argc != 4) {
 #else
-    if (argc != 3) {
+    if (argc != 4) {
 #endif
         printf("Error: Invalid number of arguments\n");
         usage();
