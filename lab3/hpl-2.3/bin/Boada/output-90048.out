@@ -1,0 +1,174 @@
+Linpack execution with 1 nodes and 4 processes
+================================================================================
+HPLinpack 2.3  --  High-Performance Linpack benchmark  --   December 2, 2018
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   10000 
+NB     :      32       64      128      256 
+PMAP   : Row-major process mapping
+P      :       1        2        4 
+Q      :       4        2        1 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Mix (threshold = 64)
+L1     : transposed form
+U      : transposed form
+EQUIL  : yes
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       10000    32     1     4              11.23             5.9403e+01
+HPL_pdgesv() start time Fri May 14 15:24:50 2021
+
+HPL_pdgesv() end time   Fri May 14 15:25:01 2021
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.12617199e-03 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       10000    64     1     4              10.58             6.3040e+01
+HPL_pdgesv() start time Fri May 14 15:25:11 2021
+
+HPL_pdgesv() end time   Fri May 14 15:25:22 2021
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.21733600e-03 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       10000   128     1     4              10.53             6.3324e+01
+HPL_pdgesv() start time Fri May 14 15:25:32 2021
+
+HPL_pdgesv() end time   Fri May 14 15:25:42 2021
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.29268837e-03 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       10000   256     1     4              11.10             6.0092e+01
+HPL_pdgesv() start time Fri May 14 15:25:52 2021
+
+HPL_pdgesv() end time   Fri May 14 15:26:04 2021
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.91082482e-03 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       10000    32     2     2              11.90             5.6037e+01
+HPL_pdgesv() start time Fri May 14 15:26:14 2021
+
+HPL_pdgesv() end time   Fri May 14 15:26:26 2021
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.43869901e-03 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       10000    64     2     2              11.14             5.9870e+01
+HPL_pdgesv() start time Fri May 14 15:26:36 2021
+
+HPL_pdgesv() end time   Fri May 14 15:26:47 2021
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.61534472e-03 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       10000   128     2     2              10.93             6.1035e+01
+HPL_pdgesv() start time Fri May 14 15:26:57 2021
+
+HPL_pdgesv() end time   Fri May 14 15:27:08 2021
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.82620782e-03 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       10000   256     2     2              11.61             5.7419e+01
+HPL_pdgesv() start time Fri May 14 15:27:18 2021
+
+HPL_pdgesv() end time   Fri May 14 15:27:30 2021
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.72355566e-03 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       10000    32     4     1              12.89             5.1724e+01
+HPL_pdgesv() start time Fri May 14 15:27:40 2021
+
+HPL_pdgesv() end time   Fri May 14 15:27:53 2021
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.67791189e-03 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       10000    64     4     1              12.09             5.5149e+01
+HPL_pdgesv() start time Fri May 14 15:28:03 2021
+
+HPL_pdgesv() end time   Fri May 14 15:28:15 2021
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   3.07808236e-03 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       10000   128     4     1              12.34             5.4027e+01
+HPL_pdgesv() start time Fri May 14 15:28:25 2021
+
+HPL_pdgesv() end time   Fri May 14 15:28:38 2021
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.97644546e-03 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       10000   256     4     1              12.72             5.2411e+01
+HPL_pdgesv() start time Fri May 14 15:28:48 2021
+
+HPL_pdgesv() end time   Fri May 14 15:29:01 2021
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.57158476e-03 ...... PASSED
+================================================================================
+
+Finished     12 tests with the following results:
+             12 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
