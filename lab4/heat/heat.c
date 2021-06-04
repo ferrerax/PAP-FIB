@@ -75,7 +75,7 @@ int main( int argc, char *argv[] )
         iter++;
 
         // solution good enough ?
-//        if (residual < 0.00005) break;
+        if (residual < 0.00005) break;
 
         // max. iteration reached ? (no limit with maxiter=0)
         if (param.maxiter>0 && iter>=param.maxiter) break;

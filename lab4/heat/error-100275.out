@@ -1,0 +1,5 @@
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-boada-7: error: *** JOB 100275 ON boada-7 CANCELLED AT 2021-06-04T18:17:21 ***
+srun: forcing job termination
+slurmstepd-boada-7: error: *** STEP 100275.0 ON boada-7 CANCELLED AT 2021-06-04T18:17:21 ***

@@ -93,8 +93,8 @@ int main( int argc, char *argv[] )
                 MPI_Send(&maxiter, 1, MPI_INT, i, 0, MPI_COMM_WORLD);
                 MPI_Send(&columns, 1, MPI_INT, i, 0, MPI_COMM_WORLD);
                 MPI_Send(&proc_rows, 1, MPI_INT, i, 0, MPI_COMM_WORLD);
-                MPI_Send(&param.u[i * proc_rows * columns], (proc_rows+2)*columns, MPI_DOUBLE, i, 2, MPI_COMM_WORLD); //Situarem a la fila que toca pel tema del marge?
-                MPI_Send(&param.uhelp[i * proc_rows * columns], (proc_rows+2)*columns, MPI_DOUBLE, i, 3, MPI_COMM_WORLD);
+                MPI_Send(&param.u[i * proc_rows * columns], (proc_rows+2)*columns, MPI_DOUBLE, i, 0, MPI_COMM_WORLD); //Situarem a la fila que toca pel tema del marge?
+                MPI_Send(&param.uhelp[i * proc_rows * columns], (proc_rows+2)*columns, MPI_DOUBLE, i, 0, MPI_COMM_WORLD);
             }
         }
 
@@ -162,8 +162,8 @@ int main( int argc, char *argv[] )
         }
 
         // fill initial values for matrix with values received from master
-        MPI_Recv(&u[0], rows*columns, MPI_DOUBLE, 0, 2, MPI_COMM_WORLD, &status);
-        MPI_Recv(&uhelp[0], rows*columns, MPI_DOUBLE, 0, 3, MPI_COMM_WORLD, &status);
+        MPI_Recv(&u[0], rows*columns, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD, &status);
+        MPI_Recv(&uhelp[0], rows*columns, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD, &status);
 
         iter = 0;
         while(1) {
