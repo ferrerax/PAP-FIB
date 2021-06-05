@@ -108,7 +108,7 @@ int main( int argc, char *argv[] )
              }
             
             //Mirem de demanar la dada que necessitarem.
-            if (iter < maxiter - 1)    
+            if (iter < maxiter - 1 && numprocs > 1)    
                 MPI_Irecv(&param.uhelp[(proc_rows+1)*columns],columns,MPI_DOUBLE,1,1,MPI_COMM_WORLD,&rep_fila_baixa);
             
             double residual_tmp = relax_jacobi(param.u, param.uhelp, proc_rows+2, columns);
@@ -123,7 +123,8 @@ int main( int argc, char *argv[] )
             
             //Si no hem rebut res esperem abans de començar --> cal moure aixo.
             printf("Proces %d bloquejat a la it %d\n", myid, iter);
-            MPI_Wait(&rep_fila_baixa, MPI_STATUS_IGNORE);
+            if (numprocs > 1)
+                MPI_Wait(&rep_fila_baixa, MPI_STATUS_IGNORE);
             printf("Proces %d desbloquejat a la it %d\n", myid, iter);
             
             // Copy uhelp into u
