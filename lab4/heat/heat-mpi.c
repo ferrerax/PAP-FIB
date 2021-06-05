@@ -101,7 +101,7 @@ int main( int argc, char *argv[] )
         iter = 0;
         MPI_Request rep_fila_baixa,envia_fila_baixa;
         while(1) {
-            if (iter > 0)
+            if (iter > 0 && numprocs > 1)
              {
                 //Esperem a que s'hagi enviat la fila per no matxacar-la
                 MPI_Wait(&envia_fila_baixa, MPI_STATUS_IGNORE);
@@ -118,7 +118,8 @@ int main( int argc, char *argv[] )
             iter++;
             
             //Enviem el que hem computat
-            MPI_Isend(&param.uhelp[proc_rows*columns],columns,MPI_DOUBLE,1,2,MPI_COMM_WORLD,&envia_fila_baixa);
+            if (numprocs > 1)
+                MPI_Isend(&param.uhelp[proc_rows*columns],columns,MPI_DOUBLE,1,2,MPI_COMM_WORLD,&envia_fila_baixa);
             
             //Si no hem rebut res esperem abans de començar --> cal moure aixo.
             printf("Proces %d bloquejat a la it %d\n", myid, iter);
