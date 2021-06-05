@@ -108,11 +108,11 @@ int main( int argc, char *argv[] )
              }
             
             //Mirem de demanar la dada que necessitarem.
+            if (iter < maxiter - 1)    
+                MPI_Irecv(&param.uhelp[(proc_rows+1)*columns],columns,MPI_DOUBLE,1,1,MPI_COMM_WORLD,&rep_fila_baixa);
             
             double residual_tmp = relax_jacobi(param.u, param.uhelp, proc_rows+2, columns);
             
-            if (iter < maxiter - 1)    
-                MPI_Irecv(&param.uhelp[(proc_rows+1)*columns],columns,MPI_DOUBLE,1,1,MPI_COMM_WORLD,&rep_fila_baixa);
            
             //Augmentem la iteració
             iter++;
@@ -203,14 +203,14 @@ int main( int argc, char *argv[] )
                     MPI_Wait(&envia_fila_baixa, MPI_STATUS_IGNORE);
              }
             
-            double residual_tmp = relax_jacobi(u, uhelp, rows, columns);
-            
             if (iter < maxiter - 1){
                 MPI_Irecv(&uhelp[0],columns,MPI_DOUBLE,myid-1,2,MPI_COMM_WORLD,&rep_fila_alta);
                 if (myid < numprocs - 1){
                     MPI_Irecv(&uhelp[(rows-1)*columns],columns,MPI_DOUBLE,myid+1,1,MPI_COMM_WORLD,&rep_fila_baixa);
                 }
             }
+            double residual_tmp = relax_jacobi(u, uhelp, rows, columns);
+            
             
             iter++;
            
