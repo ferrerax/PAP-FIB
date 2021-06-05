@@ -112,13 +112,13 @@ int main( int argc, char *argv[] )
             double residual_tmp = relax_jacobi(param.u, param.uhelp, proc_rows+2, columns);
             
             if (iter < maxiter - 1)    
-                MPI_Irecv(&param.u[(proc_rows+1)*columns],columns,MPI_DOUBLE,1,1,MPI_COMM_WORLD,&rep_fila_baixa);
-            
+                MPI_Irecv(&param.uhelp[(proc_rows+1)*columns],columns,MPI_DOUBLE,1,1,MPI_COMM_WORLD,&rep_fila_baixa);
+           
             //Augmentem la iteració
             iter++;
             
             //Enviem el que hem computat
-            MPI_Isend(&param.u[proc_rows*columns],columns,MPI_DOUBLE,1,2,MPI_COMM_WORLD,&envia_fila_baixa);
+            MPI_Isend(&param.uhelp[proc_rows*columns],columns,MPI_DOUBLE,1,2,MPI_COMM_WORLD,&envia_fila_baixa);
             
             //Si no hem rebut res esperem abans de començar --> cal moure aixo.
             printf("Proces %d bloquejat a la it %d\n", myid, iter);
@@ -202,21 +202,22 @@ int main( int argc, char *argv[] )
                 if (myid < numprocs -1 )
                     MPI_Wait(&envia_fila_baixa, MPI_STATUS_IGNORE);
              }
+            
             double residual_tmp = relax_jacobi(u, uhelp, rows, columns);
             
             if (iter < maxiter - 1){
-                MPI_Irecv(&u[0],columns,MPI_DOUBLE,myid-1,2,MPI_COMM_WORLD,&rep_fila_alta);
+                MPI_Irecv(&uhelp[0],columns,MPI_DOUBLE,myid-1,2,MPI_COMM_WORLD,&rep_fila_alta);
                 if (myid < numprocs - 1){
-                    MPI_Irecv(&u[(rows-1)*columns],columns,MPI_DOUBLE,myid+1,1,MPI_COMM_WORLD,&rep_fila_baixa);
+                    MPI_Irecv(&uhelp[(rows-1)*columns],columns,MPI_DOUBLE,myid+1,1,MPI_COMM_WORLD,&rep_fila_baixa);
                 }
             }
             
             iter++;
            
             //Envio files de baix i de dalt.
-            MPI_Isend(&u[columns],columns,MPI_DOUBLE,myid-1,1,MPI_COMM_WORLD,&envia_fila_alta);
+            MPI_Isend(&uhelp[columns],columns,MPI_DOUBLE,myid-1,1,MPI_COMM_WORLD,&envia_fila_alta);
             if (myid<numprocs-1)
-                MPI_Isend(&u[(rows-2)*columns],columns,MPI_DOUBLE,myid+1,2,MPI_COMM_WORLD,&envia_fila_baixa);
+                MPI_Isend(&uhelp[(rows-2)*columns],columns,MPI_DOUBLE,myid+1,2,MPI_COMM_WORLD,&envia_fila_baixa);
 
             printf("Proces %d bloquejat a la it %d\n", myid, iter);
             MPI_Wait(&rep_fila_alta,MPI_STATUS_IGNORE);
@@ -226,9 +227,9 @@ int main( int argc, char *argv[] )
             } 
             printf("Proces %d desbloquejat a la it %d\n", myid, iter);
             
+
             // Copy uhelp into u
             double * tmp = u; u = uhelp; uhelp = tmp;
-
 
             //reduccio per a obtenir el valor correcte de  residual
             MPI_Allreduce(&residual_tmp, &residual, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
