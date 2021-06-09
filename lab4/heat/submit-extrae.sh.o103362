@@ -1,0 +1,1988 @@
+Welcome to Extrae 3.5.4
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 2
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on /Soft/PAR/extrae/3.5
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: Warning! <mpi> tag will be ignored. This library does not support MPI.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: <mpi> tag at <Callers> level will be ignored. This library does not support MPI.
+Extrae: <dynamic-memory> tag at <Callers> level will be ignored. This library does not support dynamic memory instrumentation.
+Extrae: Tracing buffer can hold 5000000 events
+Extrae: Circular buffer disabled.
+Extrae: Sampling buffers will be written at instrumentation points
+Extrae: Warning! <dynamic-memory> tag will be ignored. This library does support instrumenting dynamic memory calls.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/pap0016/PAP-FIB/lab4/heat
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 2 threads
+
+Welcome to Extrae 3.5.4
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 2
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on /Soft/PAR/extrae/3.5
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: Warning! <mpi> tag will be ignored. This library does not support MPI.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: <mpi> tag at <Callers> level will be ignored. This library does not support MPI.
+Extrae: <dynamic-memory> tag at <Callers> level will be ignored. This library does not support dynamic memory instrumentation.
+Extrae: Tracing buffer can hold 5000000 events
+Extrae: Circular buffer disabled.
+Extrae: Sampling buffers will be written at instrumentation points
+Extrae: Warning! <dynamic-memory> tag will be ignored. This library does support instrumenting dynamic memory calls.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/pap0016/PAP-FIB/lab4/heat
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 2 threads
+
+Welcome to Extrae 3.5.4
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 2
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on /Soft/PAR/extrae/3.5
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: Warning! <mpi> tag will be ignored. This library does not support MPI.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: <mpi> tag at <Callers> level will be ignored. This library does not support MPI.
+Extrae: <dynamic-memory> tag at <Callers> level will be ignored. This library does not support dynamic memory instrumentation.
+Extrae: Tracing buffer can hold 5000000 events
+Extrae: Circular buffer disabled.
+Extrae: Sampling buffers will be written at instrumentation points
+Extrae: Warning! <dynamic-memory> tag will be ignored. This library does support instrumenting dynamic memory calls.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/pap0016/PAP-FIB/lab4/heat
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 2 threads
+
+Welcome to Extrae 3.5.4
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 2
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on /Soft/PAR/extrae/3.5
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: Warning! <mpi> tag will be ignored. This library does not support MPI.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: <mpi> tag at <Callers> level will be ignored. This library does not support MPI.
+Extrae: <dynamic-memory> tag at <Callers> level will be ignored. This library does not support dynamic memory instrumentation.
+Extrae: Tracing buffer can hold 5000000 events
+Extrae: Circular buffer disabled.
+Extrae: Sampling buffers will be written at instrumentation points
+Extrae: Warning! <dynamic-memory> tag will be ignored. This library does support instrumenting dynamic memory calls.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/pap0016/PAP-FIB/lab4/heat
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 2 threads
+
+Welcome to Extrae 3.5.4
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 2
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on /Soft/PAR/extrae/3.5
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: Warning! <mpi> tag will be ignored. This library does not support MPI.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: <mpi> tag at <Callers> level will be ignored. This library does not support MPI.
+Extrae: <dynamic-memory> tag at <Callers> level will be ignored. This library does not support dynamic memory instrumentation.
+Extrae: Tracing buffer can hold 5000000 events
+Extrae: Circular buffer disabled.
+Extrae: Sampling buffers will be written at instrumentation points
+Extrae: Warning! <dynamic-memory> tag will be ignored. This library does support instrumenting dynamic memory calls.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/pap0016/PAP-FIB/lab4/heat
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 2 threads
+
+Welcome to Extrae 3.5.4
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 2
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on /Soft/PAR/extrae/3.5
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: Warning! <mpi> tag will be ignored. This library does not support MPI.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: <mpi> tag at <Callers> level will be ignored. This library does not support MPI.
+Extrae: <dynamic-memory> tag at <Callers> level will be ignored. This library does not support dynamic memory instrumentation.
+Extrae: Tracing buffer can hold 5000000 events
+Extrae: Circular buffer disabled.
+Extrae: Sampling buffers will be written at instrumentation points
+Extrae: Warning! <dynamic-memory> tag will be ignored. This library does support instrumenting dynamic memory calls.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/pap0016/PAP-FIB/lab4/heat
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 2 threads
+
+Welcome to Extrae 3.5.4
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 2
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on /Soft/PAR/extrae/3.5
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: Warning! <mpi> tag will be ignored. This library does not support MPI.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: <mpi> tag at <Callers> level will be ignored. This library does not support MPI.
+Extrae: <dynamic-memory> tag at <Callers> level will be ignored. This library does not support dynamic memory instrumentation.
+Extrae: Tracing buffer can hold 5000000 events
+Extrae: Circular buffer disabled.
+Extrae: Sampling buffers will be written at instrumentation points
+Extrae: Warning! <dynamic-memory> tag will be ignored. This library does support instrumenting dynamic memory calls.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/pap0016/PAP-FIB/lab4/heat
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 2 threads
+
+Welcome to Extrae 3.5.4
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 2
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on /Soft/PAR/extrae/3.5
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: Warning! <mpi> tag will be ignored. This library does not support MPI.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: <mpi> tag at <Callers> level will be ignored. This library does not support MPI.
+Extrae: <dynamic-memory> tag at <Callers> level will be ignored. This library does not support dynamic memory instrumentation.
+Extrae: Tracing buffer can hold 5000000 events
+Extrae: Circular buffer disabled.
+Extrae: Sampling buffers will be written at instrumentation points
+Extrae: Warning! <dynamic-memory> tag will be ignored. This library does support instrumenting dynamic memory calls.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/pap0016/PAP-FIB/lab4/heat
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 2 threads
+
+I am worker 3 on boada-6 and ready to receive work from master ...
+I am worker 4 on boada-6 and ready to receive work from master ...
+I am the master running on boada-6, distributing work to 7 additional workers ...
+I am worker 6 on boada-6 and ready to receive work from master ...
+Iterations        : 100
+Resolution        : 8192
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 2.50 
+   2: (0.50, 1.00) 1.00 2.50 
+I am worker 1 on boada-6 and ready to receive work from master ...
+I am worker 7 on boada-6 and ready to receive work from master ...
+I am worker 2 on boada-6 and ready to receive work from master ...
+I am worker 5 on boada-6 and ready to receive work from master ...
+Proces 1 bloquejat a la it 1
+Proces 2 bloquejat a la it 1
+Proces 3 bloquejat a la it 1
+Proces 2 desbloquejat a la it 1
+Proces 4 bloquejat a la it 1
+Proces 3 desbloquejat a la it 1
+Proces 5 bloquejat a la it 1
+Proces 4 desbloquejat a la it 1
+Proces 6 bloquejat a la it 1
+Proces 5 desbloquejat a la it 1
+Proces 0 bloquejat a la it 1
+Proces 0 desbloquejat a la it 1
+Proces 7 bloquejat a la it 1
+Proces 7 desbloquejat a la it 1
+Proces 6 desbloquejat a la it 1
+Proces 1 desbloquejat a la it 1
+Proces 7 bloquejat a la it 2
+Proces 4 bloquejat a la it 2
+Proces 5 bloquejat a la it 2
+Proces 2 bloquejat a la it 2
+Proces 6 bloquejat a la it 2
+Proces 3 bloquejat a la it 2
+Proces 7 desbloquejat a la it 2
+Proces 0 bloquejat a la it 2
+Proces 4 desbloquejat a la it 2
+Proces 6 desbloquejat a la it 2
+Proces 3 desbloquejat a la it 2
+Proces 1 bloquejat a la it 2
+Proces 2 desbloquejat a la it 2
+Proces 5 desbloquejat a la it 2
+Proces 1 desbloquejat a la it 2
+Proces 0 desbloquejat a la it 2
+Proces 0 bloquejat a la it 3
+Proces 2 bloquejat a la it 3
+Proces 6 bloquejat a la it 3
+Proces 3 bloquejat a la it 3
+Proces 7 bloquejat a la it 3
+Proces 4 bloquejat a la it 3
+Proces 3 desbloquejat a la it 3
+Proces 1 bloquejat a la it 3
+Proces 5 bloquejat a la it 3
+Proces 4 desbloquejat a la it 3
+Proces 7 desbloquejat a la it 3
+Proces 1 desbloquejat a la it 3
+Proces 5 desbloquejat a la it 3
+Proces 0 desbloquejat a la it 3
+Proces 6 desbloquejat a la it 3
+Proces 2 desbloquejat a la it 3
+Proces 2 bloquejat a la it 4
+Proces 6 bloquejat a la it 4
+Proces 3 bloquejat a la it 4
+Proces 0 bloquejat a la it 4
+Proces 4 bloquejat a la it 4
+Proces 5 bloquejat a la it 4
+Proces 7 bloquejat a la it 4
+Proces 1 bloquejat a la it 4
+Proces 3 desbloquejat a la it 4
+Proces 5 desbloquejat a la it 4
+Proces 1 desbloquejat a la it 4
+Proces 7 desbloquejat a la it 4
+Proces 0 desbloquejat a la it 4
+Proces 4 desbloquejat a la it 4
+Proces 6 desbloquejat a la it 4
+Proces 2 desbloquejat a la it 4
+Proces 2 bloquejat a la it 5
+Proces 3 bloquejat a la it 5
+Proces 5 bloquejat a la it 5
+Proces 0 bloquejat a la it 5
+Proces 6 bloquejat a la it 5
+Proces 7 bloquejat a la it 5
+Proces 4 bloquejat a la it 5
+Proces 1 bloquejat a la it 5
+Proces 2 desbloquejat a la it 5
+Proces 7 desbloquejat a la it 5
+Proces 4 desbloquejat a la it 5
+Proces 6 desbloquejat a la it 5
+Proces 5 desbloquejat a la it 5
+Proces 3 desbloquejat a la it 5
+Proces 1 desbloquejat a la it 5
+Proces 0 desbloquejat a la it 5
+Proces 2 bloquejat a la it 6
+Proces 3 bloquejat a la it 6
+Proces 5 bloquejat a la it 6
+Proces 0 bloquejat a la it 6
+Proces 6 bloquejat a la it 6
+Proces 4 bloquejat a la it 6
+Proces 7 bloquejat a la it 6
+Proces 1 bloquejat a la it 6
+Proces 4 desbloquejat a la it 6
+Proces 3 desbloquejat a la it 6
+Proces 1 desbloquejat a la it 6
+Proces 7 desbloquejat a la it 6
+Proces 0 desbloquejat a la it 6
+Proces 2 desbloquejat a la it 6
+Proces 5 desbloquejat a la it 6
+Proces 6 desbloquejat a la it 6
+Proces 2 bloquejat a la it 7
+Proces 0 bloquejat a la it 7
+Proces 1 bloquejat a la it 7
+Proces 4 bloquejat a la it 7
+Proces 3 bloquejat a la it 7
+Proces 1 desbloquejat a la it 7
+Proces 5 bloquejat a la it 7
+Proces 0 desbloquejat a la it 7
+Proces 6 bloquejat a la it 7
+Proces 2 desbloquejat a la it 7
+Proces 7 bloquejat a la it 7
+Proces 4 desbloquejat a la it 7
+Proces 3 desbloquejat a la it 7
+Proces 7 desbloquejat a la it 7
+Proces 5 desbloquejat a la it 7
+Proces 6 desbloquejat a la it 7
+Proces 2 bloquejat a la it 8
+Proces 3 bloquejat a la it 8
+Proces 0 bloquejat a la it 8
+Proces 4 bloquejat a la it 8
+Proces 1 bloquejat a la it 8
+Proces 5 bloquejat a la it 8
+Proces 1 desbloquejat a la it 8
+Proces 3 desbloquejat a la it 8
+Proces 0 desbloquejat a la it 8
+Proces 6 bloquejat a la it 8
+Proces 7 bloquejat a la it 8
+Proces 2 desbloquejat a la it 8
+Proces 4 desbloquejat a la it 8
+Proces 7 desbloquejat a la it 8
+Proces 5 desbloquejat a la it 8
+Proces 6 desbloquejat a la it 8
+Proces 3 bloquejat a la it 9
+Proces 2 bloquejat a la it 9
+Proces 0 bloquejat a la it 9
+Proces 1 bloquejat a la it 9
+Proces 4 bloquejat a la it 9
+Proces 1 desbloquejat a la it 9
+Proces 2 desbloquejat a la it 9
+Proces 0 desbloquejat a la it 9
+Proces 3 desbloquejat a la it 9
+Proces 7 bloquejat a la it 9
+Proces 6 bloquejat a la it 9
+Proces 5 bloquejat a la it 9
+Proces 4 desbloquejat a la it 9
+Proces 5 desbloquejat a la it 9
+Proces 7 desbloquejat a la it 9
+Proces 6 desbloquejat a la it 9
+Proces 2 bloquejat a la it 10
+Proces 0 bloquejat a la it 10
+Proces 3 bloquejat a la it 10
+Proces 1 bloquejat a la it 10
+Proces 1 desbloquejat a la it 10
+Proces 0 desbloquejat a la it 10
+Proces 2 desbloquejat a la it 10
+Proces 6 bloquejat a la it 10
+Proces 5 bloquejat a la it 10
+Proces 7 bloquejat a la it 10
+Proces 4 bloquejat a la it 10
+Proces 3 desbloquejat a la it 10
+Proces 7 desbloquejat a la it 10
+Proces 4 desbloquejat a la it 10
+Proces 6 desbloquejat a la it 10
+Proces 5 desbloquejat a la it 10
+Proces 2 bloquejat a la it 11
+Proces 3 bloquejat a la it 11
+Proces 0 bloquejat a la it 11
+Proces 1 bloquejat a la it 11
+Proces 4 bloquejat a la it 11
+Proces 1 desbloquejat a la it 11
+Proces 0 desbloquejat a la it 11
+Proces 2 desbloquejat a la it 11
+Proces 7 bloquejat a la it 11
+Proces 3 desbloquejat a la it 11
+Proces 5 bloquejat a la it 11
+Proces 4 desbloquejat a la it 11
+Proces 6 bloquejat a la it 11
+Proces 6 desbloquejat a la it 11
+Proces 7 desbloquejat a la it 11
+Proces 5 desbloquejat a la it 11
+Proces 2 bloquejat a la it 12
+Proces 3 bloquejat a la it 12
+Proces 4 bloquejat a la it 12
+Proces 1 bloquejat a la it 12
+Proces 0 bloquejat a la it 12
+Proces 5 bloquejat a la it 12
+Proces 4 desbloquejat a la it 12
+Proces 6 bloquejat a la it 12
+Proces 2 desbloquejat a la it 12
+Proces 3 desbloquejat a la it 12
+Proces 7 bloquejat a la it 12
+Proces 0 desbloquejat a la it 12
+Proces 1 desbloquejat a la it 12
+Proces 7 desbloquejat a la it 12
+Proces 5 desbloquejat a la it 12
+Proces 6 desbloquejat a la it 12
+Proces 2 bloquejat a la it 13
+Proces 3 bloquejat a la it 13
+Proces 0 bloquejat a la it 13
+Proces 4 bloquejat a la it 13
+Proces 1 bloquejat a la it 13
+Proces 1 desbloquejat a la it 13
+Proces 2 desbloquejat a la it 13
+Proces 0 desbloquejat a la it 13
+Proces 3 desbloquejat a la it 13
+Proces 5 bloquejat a la it 13
+Proces 7 bloquejat a la it 13
+Proces 6 bloquejat a la it 13
+Proces 4 desbloquejat a la it 13
+Proces 6 desbloquejat a la it 13
+Proces 5 desbloquejat a la it 13
+Proces 7 desbloquejat a la it 13
+Proces 0 bloquejat a la it 14
+Proces 2 bloquejat a la it 14
+Proces 3 bloquejat a la it 14
+Proces 4 bloquejat a la it 14
+Proces 1 bloquejat a la it 14
+Proces 6 bloquejat a la it 14
+Proces 1 desbloquejat a la it 14
+Proces 3 desbloquejat a la it 14
+Proces 0 desbloquejat a la it 14
+Proces 5 bloquejat a la it 14
+Proces 2 desbloquejat a la it 14
+Proces 7 bloquejat a la it 14
+Proces 5 desbloquejat a la it 14
+Proces 4 desbloquejat a la it 14
+Proces 7 desbloquejat a la it 14
+Proces 6 desbloquejat a la it 14
+Proces 0 bloquejat a la it 15
+Proces 2 bloquejat a la it 15
+Proces 4 bloquejat a la it 15
+Proces 3 bloquejat a la it 15
+Proces 1 bloquejat a la it 15
+Proces 6 bloquejat a la it 15
+Proces 5 bloquejat a la it 15
+Proces 4 desbloquejat a la it 15
+Proces 1 desbloquejat a la it 15
+Proces 2 desbloquejat a la it 15
+Proces 7 bloquejat a la it 15
+Proces 0 desbloquejat a la it 15
+Proces 3 desbloquejat a la it 15
+Proces 5 desbloquejat a la it 15
+Proces 7 desbloquejat a la it 15
+Proces 6 desbloquejat a la it 15
+Proces 2 bloquejat a la it 16
+Proces 3 bloquejat a la it 16
+Proces 0 bloquejat a la it 16
+Proces 1 bloquejat a la it 16
+Proces 4 bloquejat a la it 16
+Proces 1 desbloquejat a la it 16
+Proces 2 desbloquejat a la it 16
+Proces 0 desbloquejat a la it 16
+Proces 6 bloquejat a la it 16
+Proces 3 desbloquejat a la it 16
+Proces 5 bloquejat a la it 16
+Proces 7 bloquejat a la it 16
+Proces 5 desbloquejat a la it 16
+Proces 4 desbloquejat a la it 16
+Proces 7 desbloquejat a la it 16
+Proces 6 desbloquejat a la it 16
+Proces 2 bloquejat a la it 17
+Proces 0 bloquejat a la it 17
+Proces 3 bloquejat a la it 17
+Proces 1 bloquejat a la it 17
+Proces 4 bloquejat a la it 17
+Proces 1 desbloquejat a la it 17
+Proces 0 desbloquejat a la it 17
+Proces 3 desbloquejat a la it 17
+Proces 2 desbloquejat a la it 17
+Proces 5 bloquejat a la it 17
+Proces 4 desbloquejat a la it 17
+Proces 6 bloquejat a la it 17
+Proces 7 bloquejat a la it 17
+Proces 5 desbloquejat a la it 17
+Proces 7 desbloquejat a la it 17
+Proces 6 desbloquejat a la it 17
+Proces 2 bloquejat a la it 18
+Proces 3 bloquejat a la it 18
+Proces 0 bloquejat a la it 18
+Proces 4 bloquejat a la it 18
+Proces 1 bloquejat a la it 18
+Proces 3 desbloquejat a la it 18
+Proces 1 desbloquejat a la it 18
+Proces 2 desbloquejat a la it 18
+Proces 0 desbloquejat a la it 18
+Proces 6 bloquejat a la it 18
+Proces 5 bloquejat a la it 18
+Proces 5 desbloquejat a la it 18
+Proces 4 desbloquejat a la it 18
+Proces 7 bloquejat a la it 18
+Proces 7 desbloquejat a la it 18
+Proces 6 desbloquejat a la it 18
+Proces 0 bloquejat a la it 19
+Proces 2 bloquejat a la it 19
+Proces 3 bloquejat a la it 19
+Proces 4 bloquejat a la it 19
+Proces 1 bloquejat a la it 19
+Proces 3 desbloquejat a la it 19
+Proces 1 desbloquejat a la it 19
+Proces 0 desbloquejat a la it 19
+Proces 5 bloquejat a la it 19
+Proces 2 desbloquejat a la it 19
+Proces 6 bloquejat a la it 19
+Proces 4 desbloquejat a la it 19
+Proces 5 desbloquejat a la it 19
+Proces 7 bloquejat a la it 19
+Proces 7 desbloquejat a la it 19
+Proces 6 desbloquejat a la it 19
+Proces 2 bloquejat a la it 20
+Proces 3 bloquejat a la it 20
+Proces 4 bloquejat a la it 20
+Proces 1 bloquejat a la it 20
+Proces 0 bloquejat a la it 20
+Proces 6 bloquejat a la it 20
+Proces 2 desbloquejat a la it 20
+Proces 7 bloquejat a la it 20
+Proces 5 bloquejat a la it 20
+Proces 0 desbloquejat a la it 20
+Proces 3 desbloquejat a la it 20
+Proces 1 desbloquejat a la it 20
+Proces 7 desbloquejat a la it 20
+Proces 5 desbloquejat a la it 20
+Proces 4 desbloquejat a la it 20
+Proces 6 desbloquejat a la it 20
+Proces 2 bloquejat a la it 21
+Proces 3 bloquejat a la it 21
+Proces 0 bloquejat a la it 21
+Proces 4 bloquejat a la it 21
+Proces 1 bloquejat a la it 21
+Proces 5 bloquejat a la it 21
+Proces 4 desbloquejat a la it 21
+Proces 6 bloquejat a la it 21
+Proces 3 desbloquejat a la it 21
+Proces 1 desbloquejat a la it 21
+Proces 7 bloquejat a la it 21
+Proces 0 desbloquejat a la it 21
+Proces 2 desbloquejat a la it 21
+Proces 5 desbloquejat a la it 21
+Proces 7 desbloquejat a la it 21
+Proces 6 desbloquejat a la it 21
+Proces 2 bloquejat a la it 22
+Proces 3 bloquejat a la it 22
+Proces 0 bloquejat a la it 22
+Proces 4 bloquejat a la it 22
+Proces 3 desbloquejat a la it 22
+Proces 1 bloquejat a la it 22
+Proces 2 desbloquejat a la it 22
+Proces 6 bloquejat a la it 22
+Proces 5 bloquejat a la it 22
+Proces 1 desbloquejat a la it 22
+Proces 0 desbloquejat a la it 22
+Proces 7 bloquejat a la it 22
+Proces 4 desbloquejat a la it 22
+Proces 5 desbloquejat a la it 22
+Proces 7 desbloquejat a la it 22
+Proces 6 desbloquejat a la it 22
+Proces 3 bloquejat a la it 23
+Proces 0 bloquejat a la it 23
+Proces 1 bloquejat a la it 23
+Proces 2 bloquejat a la it 23
+Proces 4 bloquejat a la it 23
+Proces 2 desbloquejat a la it 23
+Proces 1 desbloquejat a la it 23
+Proces 0 desbloquejat a la it 23
+Proces 3 desbloquejat a la it 23
+Proces 5 bloquejat a la it 23
+Proces 6 bloquejat a la it 23
+Proces 7 bloquejat a la it 23
+Proces 4 desbloquejat a la it 23
+Proces 7 desbloquejat a la it 23
+Proces 5 desbloquejat a la it 23
+Proces 6 desbloquejat a la it 23
+Proces 0 bloquejat a la it 24
+Proces 1 bloquejat a la it 24
+Proces 4 bloquejat a la it 24
+Proces 5 bloquejat a la it 24
+Proces 6 bloquejat a la it 24
+Proces 7 bloquejat a la it 24
+Proces 0 desbloquejat a la it 24
+Proces 2 bloquejat a la it 24
+Proces 7 desbloquejat a la it 24
+Proces 1 desbloquejat a la it 24
+Proces 3 bloquejat a la it 24
+Proces 5 desbloquejat a la it 24
+Proces 6 desbloquejat a la it 24
+Proces 4 desbloquejat a la it 24
+Proces 3 desbloquejat a la it 24
+Proces 2 desbloquejat a la it 24
+Proces 2 bloquejat a la it 25
+Proces 0 bloquejat a la it 25
+Proces 4 bloquejat a la it 25
+Proces 3 bloquejat a la it 25
+Proces 1 bloquejat a la it 25
+Proces 5 bloquejat a la it 25
+Proces 4 desbloquejat a la it 25
+Proces 6 bloquejat a la it 25
+Proces 1 desbloquejat a la it 25
+Proces 3 desbloquejat a la it 25
+Proces 0 desbloquejat a la it 25
+Proces 7 bloquejat a la it 25
+Proces 2 desbloquejat a la it 25
+Proces 7 desbloquejat a la it 25
+Proces 5 desbloquejat a la it 25
+Proces 6 desbloquejat a la it 25
+Proces 2 bloquejat a la it 26
+Proces 3 bloquejat a la it 26
+Proces 0 bloquejat a la it 26
+Proces 1 bloquejat a la it 26
+Proces 4 bloquejat a la it 26
+Proces 1 desbloquejat a la it 26
+Proces 0 desbloquejat a la it 26
+Proces 2 desbloquejat a la it 26
+Proces 3 desbloquejat a la it 26
+Proces 5 bloquejat a la it 26
+Proces 6 bloquejat a la it 26
+Proces 7 bloquejat a la it 26
+Proces 4 desbloquejat a la it 26
+Proces 7 desbloquejat a la it 26
+Proces 5 desbloquejat a la it 26
+Proces 6 desbloquejat a la it 26
+Proces 3 bloquejat a la it 27
+Proces 2 bloquejat a la it 27
+Proces 0 bloquejat a la it 27
+Proces 1 bloquejat a la it 27
+Proces 4 bloquejat a la it 27
+Proces 2 desbloquejat a la it 27
+Proces 1 desbloquejat a la it 27
+Proces 0 desbloquejat a la it 27
+Proces 7 bloquejat a la it 27
+Proces 6 bloquejat a la it 27
+Proces 3 desbloquejat a la it 27
+Proces 5 bloquejat a la it 27
+Proces 5 desbloquejat a la it 27
+Proces 7 desbloquejat a la it 27
+Proces 4 desbloquejat a la it 27
+Proces 6 desbloquejat a la it 27
+Proces 2 bloquejat a la it 28
+Proces 3 bloquejat a la it 28
+Proces 0 bloquejat a la it 28
+Proces 4 bloquejat a la it 28
+Proces 1 bloquejat a la it 28
+Proces 2 desbloquejat a la it 28
+Proces 1 desbloquejat a la it 28
+Proces 7 bloquejat a la it 28
+Proces 3 desbloquejat a la it 28
+Proces 0 desbloquejat a la it 28
+Proces 6 bloquejat a la it 28
+Proces 5 bloquejat a la it 28
+Proces 4 desbloquejat a la it 28
+Proces 5 desbloquejat a la it 28
+Proces 7 desbloquejat a la it 28
+Proces 6 desbloquejat a la it 28
+Proces 2 bloquejat a la it 29
+Proces 3 bloquejat a la it 29
+Proces 0 bloquejat a la it 29
+Proces 1 bloquejat a la it 29
+Proces 4 bloquejat a la it 29
+Proces 1 desbloquejat a la it 29
+Proces 2 desbloquejat a la it 29
+Proces 0 desbloquejat a la it 29
+Proces 3 desbloquejat a la it 29
+Proces 5 bloquejat a la it 29
+Proces 4 desbloquejat a la it 29
+Proces 7 bloquejat a la it 29
+Proces 6 bloquejat a la it 29
+Proces 6 desbloquejat a la it 29
+Proces 5 desbloquejat a la it 29
+Proces 7 desbloquejat a la it 29
+Proces 2 bloquejat a la it 30
+Proces 3 bloquejat a la it 30
+Proces 0 bloquejat a la it 30
+Proces 1 bloquejat a la it 30
+Proces 4 bloquejat a la it 30
+Proces 1 desbloquejat a la it 30
+Proces 0 desbloquejat a la it 30
+Proces 2 desbloquejat a la it 30
+Proces 3 desbloquejat a la it 30
+Proces 6 bloquejat a la it 30
+Proces 5 bloquejat a la it 30
+Proces 7 bloquejat a la it 30
+Proces 5 desbloquejat a la it 30
+Proces 4 desbloquejat a la it 30
+Proces 7 desbloquejat a la it 30
+Proces 6 desbloquejat a la it 30
+Proces 2 bloquejat a la it 31
+Proces 3 bloquejat a la it 31
+Proces 0 bloquejat a la it 31
+Proces 1 bloquejat a la it 31
+Proces 4 bloquejat a la it 31
+Proces 1 desbloquejat a la it 31
+Proces 2 desbloquejat a la it 31
+Proces 0 desbloquejat a la it 31
+Proces 3 desbloquejat a la it 31
+Proces 5 bloquejat a la it 31
+Proces 6 bloquejat a la it 31
+Proces 7 bloquejat a la it 31
+Proces 4 desbloquejat a la it 31
+Proces 7 desbloquejat a la it 31
+Proces 5 desbloquejat a la it 31
+Proces 6 desbloquejat a la it 31
+Proces 2 bloquejat a la it 32
+Proces 0 bloquejat a la it 32
+Proces 3 bloquejat a la it 32
+Proces 1 bloquejat a la it 32
+Proces 4 bloquejat a la it 32
+Proces 1 desbloquejat a la it 32
+Proces 3 desbloquejat a la it 32
+Proces 0 desbloquejat a la it 32
+Proces 2 desbloquejat a la it 32
+Proces 7 bloquejat a la it 32
+Proces 6 bloquejat a la it 32
+Proces 5 bloquejat a la it 32
+Proces 4 desbloquejat a la it 32
+Proces 5 desbloquejat a la it 32
+Proces 7 desbloquejat a la it 32
+Proces 6 desbloquejat a la it 32
+Proces 2 bloquejat a la it 33
+Proces 3 bloquejat a la it 33
+Proces 0 bloquejat a la it 33
+Proces 4 bloquejat a la it 33
+Proces 1 bloquejat a la it 33
+Proces 3 desbloquejat a la it 33
+Proces 5 bloquejat a la it 33
+Proces 1 desbloquejat a la it 33
+Proces 2 desbloquejat a la it 33
+Proces 6 bloquejat a la it 33
+Proces 7 bloquejat a la it 33
+Proces 0 desbloquejat a la it 33
+Proces 4 desbloquejat a la it 33
+Proces 7 desbloquejat a la it 33
+Proces 5 desbloquejat a la it 33
+Proces 6 desbloquejat a la it 33
+Proces 2 bloquejat a la it 34
+Proces 3 bloquejat a la it 34
+Proces 0 bloquejat a la it 34
+Proces 1 bloquejat a la it 34
+Proces 4 bloquejat a la it 34
+Proces 1 desbloquejat a la it 34
+Proces 2 desbloquejat a la it 34
+Proces 0 desbloquejat a la it 34
+Proces 5 bloquejat a la it 34
+Proces 4 desbloquejat a la it 34
+Proces 3 desbloquejat a la it 34
+Proces 6 bloquejat a la it 34
+Proces 7 bloquejat a la it 34
+Proces 7 desbloquejat a la it 34
+Proces 5 desbloquejat a la it 34
+Proces 6 desbloquejat a la it 34
+Proces 2 bloquejat a la it 35
+Proces 3 bloquejat a la it 35
+Proces 0 bloquejat a la it 35
+Proces 1 bloquejat a la it 35
+Proces 4 bloquejat a la it 35
+Proces 3 desbloquejat a la it 35
+Proces 1 desbloquejat a la it 35
+Proces 2 desbloquejat a la it 35
+Proces 0 desbloquejat a la it 35
+Proces 6 bloquejat a la it 35
+Proces 5 bloquejat a la it 35
+Proces 4 desbloquejat a la it 35
+Proces 7 bloquejat a la it 35
+Proces 5 desbloquejat a la it 35
+Proces 7 desbloquejat a la it 35
+Proces 6 desbloquejat a la it 35
+Proces 2 bloquejat a la it 36
+Proces 3 bloquejat a la it 36
+Proces 0 bloquejat a la it 36
+Proces 1 bloquejat a la it 36
+Proces 4 bloquejat a la it 36
+Proces 1 desbloquejat a la it 36
+Proces 3 desbloquejat a la it 36
+Proces 0 desbloquejat a la it 36
+Proces 2 desbloquejat a la it 36
+Proces 6 bloquejat a la it 36
+Proces 5 bloquejat a la it 36
+Proces 4 desbloquejat a la it 36
+Proces 7 bloquejat a la it 36
+Proces 5 desbloquejat a la it 36
+Proces 7 desbloquejat a la it 36
+Proces 6 desbloquejat a la it 36
+Proces 2 bloquejat a la it 37
+Proces 0 bloquejat a la it 37
+Proces 3 bloquejat a la it 37
+Proces 1 bloquejat a la it 37
+Proces 4 bloquejat a la it 37
+Proces 1 desbloquejat a la it 37
+Proces 2 desbloquejat a la it 37
+Proces 0 desbloquejat a la it 37
+Proces 3 desbloquejat a la it 37
+Proces 6 bloquejat a la it 37
+Proces 5 bloquejat a la it 37
+Proces 7 bloquejat a la it 37
+Proces 7 desbloquejat a la it 37
+Proces 5 desbloquejat a la it 37
+Proces 4 desbloquejat a la it 37
+Proces 6 desbloquejat a la it 37
+Proces 2 bloquejat a la it 38
+Proces 3 bloquejat a la it 38
+Proces 0 bloquejat a la it 38
+Proces 4 bloquejat a la it 38
+Proces 1 bloquejat a la it 38
+Proces 2 desbloquejat a la it 38
+Proces 6 bloquejat a la it 38
+Proces 1 desbloquejat a la it 38
+Proces 7 bloquejat a la it 38
+Proces 3 desbloquejat a la it 38
+Proces 5 bloquejat a la it 38
+Proces 0 desbloquejat a la it 38
+Proces 7 desbloquejat a la it 38
+Proces 5 desbloquejat a la it 38
+Proces 6 desbloquejat a la it 38
+Proces 4 desbloquejat a la it 38
+Proces 2 bloquejat a la it 39
+Proces 3 bloquejat a la it 39
+Proces 0 bloquejat a la it 39
+Proces 1 bloquejat a la it 39
+Proces 2 desbloquejat a la it 39
+Proces 4 bloquejat a la it 39
+Proces 3 desbloquejat a la it 39
+Proces 1 desbloquejat a la it 39
+Proces 6 bloquejat a la it 39
+Proces 0 desbloquejat a la it 39
+Proces 5 bloquejat a la it 39
+Proces 7 bloquejat a la it 39
+Proces 5 desbloquejat a la it 39
+Proces 4 desbloquejat a la it 39
+Proces 7 desbloquejat a la it 39
+Proces 6 desbloquejat a la it 39
+Proces 2 bloquejat a la it 40
+Proces 3 bloquejat a la it 40
+Proces 0 bloquejat a la it 40
+Proces 4 bloquejat a la it 40
+Proces 3 desbloquejat a la it 40
+Proces 1 bloquejat a la it 40
+Proces 5 bloquejat a la it 40
+Proces 1 desbloquejat a la it 40
+Proces 6 bloquejat a la it 40
+Proces 0 desbloquejat a la it 40
+Proces 4 desbloquejat a la it 40
+Proces 2 desbloquejat a la it 40
+Proces 7 bloquejat a la it 40
+Proces 5 desbloquejat a la it 40
+Proces 7 desbloquejat a la it 40
+Proces 6 desbloquejat a la it 40
+Proces 2 bloquejat a la it 41
+Proces 0 bloquejat a la it 41
+Proces 3 bloquejat a la it 41
+Proces 4 bloquejat a la it 41
+Proces 1 bloquejat a la it 41
+Proces 5 bloquejat a la it 41
+Proces 1 desbloquejat a la it 41
+Proces 3 desbloquejat a la it 41
+Proces 6 bloquejat a la it 41
+Proces 7 bloquejat a la it 41
+Proces 2 desbloquejat a la it 41
+Proces 0 desbloquejat a la it 41
+Proces 4 desbloquejat a la it 41
+Proces 7 desbloquejat a la it 41
+Proces 5 desbloquejat a la it 41
+Proces 6 desbloquejat a la it 41
+Proces 2 bloquejat a la it 42
+Proces 0 bloquejat a la it 42
+Proces 4 bloquejat a la it 42
+Proces 1 bloquejat a la it 42
+Proces 3 bloquejat a la it 42
+Proces 5 bloquejat a la it 42
+Proces 6 bloquejat a la it 42
+Proces 7 bloquejat a la it 42
+Proces 1 desbloquejat a la it 42
+Proces 0 desbloquejat a la it 42
+Proces 4 desbloquejat a la it 42
+Proces 7 desbloquejat a la it 42
+Proces 3 desbloquejat a la it 42
+Proces 5 desbloquejat a la it 42
+Proces 2 desbloquejat a la it 42
+Proces 6 desbloquejat a la it 42
+Proces 2 bloquejat a la it 43
+Proces 3 bloquejat a la it 43
+Proces 0 bloquejat a la it 43
+Proces 1 bloquejat a la it 43
+Proces 4 bloquejat a la it 43
+Proces 1 desbloquejat a la it 43
+Proces 0 desbloquejat a la it 43
+Proces 2 desbloquejat a la it 43
+Proces 6 bloquejat a la it 43
+Proces 7 bloquejat a la it 43
+Proces 3 desbloquejat a la it 43
+Proces 5 bloquejat a la it 43
+Proces 4 desbloquejat a la it 43
+Proces 7 desbloquejat a la it 43
+Proces 5 desbloquejat a la it 43
+Proces 6 desbloquejat a la it 43
+Proces 0 bloquejat a la it 44
+Proces 2 bloquejat a la it 44
+Proces 4 bloquejat a la it 44
+Proces 3 bloquejat a la it 44
+Proces 6 bloquejat a la it 44
+Proces 1 bloquejat a la it 44
+Proces 7 bloquejat a la it 44
+Proces 5 bloquejat a la it 44
+Proces 0 desbloquejat a la it 44
+Proces 7 desbloquejat a la it 44
+Proces 5 desbloquejat a la it 44
+Proces 1 desbloquejat a la it 44
+Proces 3 desbloquejat a la it 44
+Proces 4 desbloquejat a la it 44
+Proces 2 desbloquejat a la it 44
+Proces 6 desbloquejat a la it 44
+Proces 2 bloquejat a la it 45
+Proces 3 bloquejat a la it 45
+Proces 1 bloquejat a la it 45
+Proces 4 bloquejat a la it 45
+Proces 3 desbloquejat a la it 45
+Proces 0 bloquejat a la it 45
+Proces 7 bloquejat a la it 45
+Proces 0 desbloquejat a la it 45
+Proces 6 bloquejat a la it 45
+Proces 1 desbloquejat a la it 45
+Proces 2 desbloquejat a la it 45
+Proces 5 bloquejat a la it 45
+Proces 4 desbloquejat a la it 45
+Proces 5 desbloquejat a la it 45
+Proces 7 desbloquejat a la it 45
+Proces 6 desbloquejat a la it 45
+Proces 2 bloquejat a la it 46
+Proces 0 bloquejat a la it 46
+Proces 1 bloquejat a la it 46
+Proces 3 bloquejat a la it 46
+Proces 4 bloquejat a la it 46
+Proces 3 desbloquejat a la it 46
+Proces 1 desbloquejat a la it 46
+Proces 0 desbloquejat a la it 46
+Proces 2 desbloquejat a la it 46
+Proces 5 bloquejat a la it 46
+Proces 6 bloquejat a la it 46
+Proces 7 bloquejat a la it 46
+Proces 4 desbloquejat a la it 46
+Proces 5 desbloquejat a la it 46
+Proces 7 desbloquejat a la it 46
+Proces 6 desbloquejat a la it 46
+Proces 2 bloquejat a la it 47
+Proces 3 bloquejat a la it 47
+Proces 0 bloquejat a la it 47
+Proces 4 bloquejat a la it 47
+Proces 3 desbloquejat a la it 47
+Proces 5 bloquejat a la it 47
+Proces 6 bloquejat a la it 47
+Proces 4 desbloquejat a la it 47
+Proces 7 bloquejat a la it 47
+Proces 1 bloquejat a la it 47
+Proces 5 desbloquejat a la it 47
+Proces 7 desbloquejat a la it 47
+Proces 2 desbloquejat a la it 47
+Proces 6 desbloquejat a la it 47
+Proces 1 desbloquejat a la it 47
+Proces 0 desbloquejat a la it 47
+Proces 2 bloquejat a la it 48
+Proces 0 bloquejat a la it 48
+Proces 4 bloquejat a la it 48
+Proces 6 bloquejat a la it 48
+Proces 1 bloquejat a la it 48
+Proces 5 bloquejat a la it 48
+Proces 3 bloquejat a la it 48
+Proces 7 bloquejat a la it 48
+Proces 1 desbloquejat a la it 48
+Proces 0 desbloquejat a la it 48
+Proces 5 desbloquejat a la it 48
+Proces 4 desbloquejat a la it 48
+Proces 7 desbloquejat a la it 48
+Proces 3 desbloquejat a la it 48
+Proces 2 desbloquejat a la it 48
+Proces 6 desbloquejat a la it 48
+Proces 2 bloquejat a la it 49
+Proces 3 bloquejat a la it 49
+Proces 0 bloquejat a la it 49
+Proces 4 bloquejat a la it 49
+Proces 1 bloquejat a la it 49
+Proces 3 desbloquejat a la it 49
+Proces 1 desbloquejat a la it 49
+Proces 2 desbloquejat a la it 49
+Proces 0 desbloquejat a la it 49
+Proces 6 bloquejat a la it 49
+Proces 5 bloquejat a la it 49
+Proces 4 desbloquejat a la it 49
+Proces 7 bloquejat a la it 49
+Proces 5 desbloquejat a la it 49
+Proces 7 desbloquejat a la it 49
+Proces 6 desbloquejat a la it 49
+Proces 3 bloquejat a la it 50
+Proces 2 bloquejat a la it 50
+Proces 4 bloquejat a la it 50
+Proces 1 bloquejat a la it 50
+Proces 0 bloquejat a la it 50
+Proces 3 desbloquejat a la it 50
+Proces 2 desbloquejat a la it 50
+Proces 6 bloquejat a la it 50
+Proces 0 desbloquejat a la it 50
+Proces 5 bloquejat a la it 50
+Proces 1 desbloquejat a la it 50
+Proces 7 bloquejat a la it 50
+Proces 5 desbloquejat a la it 50
+Proces 7 desbloquejat a la it 50
+Proces 4 desbloquejat a la it 50
+Proces 6 desbloquejat a la it 50
+Proces 2 bloquejat a la it 51
+Proces 3 bloquejat a la it 51
+Proces 0 bloquejat a la it 51
+Proces 1 bloquejat a la it 51
+Proces 4 bloquejat a la it 51
+Proces 3 desbloquejat a la it 51
+Proces 2 desbloquejat a la it 51
+Proces 1 desbloquejat a la it 51
+Proces 0 desbloquejat a la it 51
+Proces 5 bloquejat a la it 51
+Proces 6 bloquejat a la it 51
+Proces 7 bloquejat a la it 51
+Proces 4 desbloquejat a la it 51
+Proces 7 desbloquejat a la it 51
+Proces 5 desbloquejat a la it 51
+Proces 6 desbloquejat a la it 51
+Proces 2 bloquejat a la it 52
+Proces 3 bloquejat a la it 52
+Proces 0 bloquejat a la it 52
+Proces 4 bloquejat a la it 52
+Proces 1 bloquejat a la it 52
+Proces 5 bloquejat a la it 52
+Proces 4 desbloquejat a la it 52
+Proces 6 bloquejat a la it 52
+Proces 3 desbloquejat a la it 52
+Proces 1 desbloquejat a la it 52
+Proces 7 bloquejat a la it 52
+Proces 2 desbloquejat a la it 52
+Proces 0 desbloquejat a la it 52
+Proces 7 desbloquejat a la it 52
+Proces 5 desbloquejat a la it 52
+Proces 6 desbloquejat a la it 52
+Proces 2 bloquejat a la it 53
+Proces 0 bloquejat a la it 53
+Proces 1 bloquejat a la it 53
+Proces 3 bloquejat a la it 53
+Proces 4 bloquejat a la it 53
+Proces 1 desbloquejat a la it 53
+Proces 3 desbloquejat a la it 53
+Proces 0 desbloquejat a la it 53
+Proces 2 desbloquejat a la it 53
+Proces 6 bloquejat a la it 53
+Proces 7 bloquejat a la it 53
+Proces 5 bloquejat a la it 53
+Proces 4 desbloquejat a la it 53
+Proces 5 desbloquejat a la it 53
+Proces 7 desbloquejat a la it 53
+Proces 6 desbloquejat a la it 53
+Proces 2 bloquejat a la it 54
+Proces 0 bloquejat a la it 54
+Proces 3 bloquejat a la it 54
+Proces 4 bloquejat a la it 54
+Proces 1 bloquejat a la it 54
+Proces 6 bloquejat a la it 54
+Proces 1 desbloquejat a la it 54
+Proces 0 desbloquejat a la it 54
+Proces 2 desbloquejat a la it 54
+Proces 5 bloquejat a la it 54
+Proces 3 desbloquejat a la it 54
+Proces 7 bloquejat a la it 54
+Proces 5 desbloquejat a la it 54
+Proces 4 desbloquejat a la it 54
+Proces 7 desbloquejat a la it 54
+Proces 6 desbloquejat a la it 54
+Proces 2 bloquejat a la it 55
+Proces 3 bloquejat a la it 55
+Proces 0 bloquejat a la it 55
+Proces 4 bloquejat a la it 55
+Proces 1 bloquejat a la it 55
+Proces 6 bloquejat a la it 55
+Proces 1 desbloquejat a la it 55
+Proces 3 desbloquejat a la it 55
+Proces 7 bloquejat a la it 55
+Proces 5 bloquejat a la it 55
+Proces 0 desbloquejat a la it 55
+Proces 2 desbloquejat a la it 55
+Proces 7 desbloquejat a la it 55
+Proces 5 desbloquejat a la it 55
+Proces 4 desbloquejat a la it 55
+Proces 6 desbloquejat a la it 55
+Proces 2 bloquejat a la it 56
+Proces 3 bloquejat a la it 56
+Proces 0 bloquejat a la it 56
+Proces 4 bloquejat a la it 56
+Proces 1 bloquejat a la it 56
+Proces 1 desbloquejat a la it 56
+Proces 2 desbloquejat a la it 56
+Proces 0 desbloquejat a la it 56
+Proces 5 bloquejat a la it 56
+Proces 4 desbloquejat a la it 56
+Proces 3 desbloquejat a la it 56
+Proces 6 bloquejat a la it 56
+Proces 7 bloquejat a la it 56
+Proces 7 desbloquejat a la it 56
+Proces 5 desbloquejat a la it 56
+Proces 6 desbloquejat a la it 56
+Proces 2 bloquejat a la it 57
+Proces 0 bloquejat a la it 57
+Proces 3 bloquejat a la it 57
+Proces 4 bloquejat a la it 57
+Proces 3 desbloquejat a la it 57
+Proces 1 bloquejat a la it 57
+Proces 1 desbloquejat a la it 57
+Proces 6 bloquejat a la it 57
+Proces 5 bloquejat a la it 57
+Proces 0 desbloquejat a la it 57
+Proces 7 bloquejat a la it 57
+Proces 2 desbloquejat a la it 57
+Proces 4 desbloquejat a la it 57
+Proces 5 desbloquejat a la it 57
+Proces 7 desbloquejat a la it 57
+Proces 6 desbloquejat a la it 57
+Proces 2 bloquejat a la it 58
+Proces 3 bloquejat a la it 58
+Proces 0 bloquejat a la it 58
+Proces 1 bloquejat a la it 58
+Proces 2 desbloquejat a la it 58
+Proces 4 bloquejat a la it 58
+Proces 3 desbloquejat a la it 58
+Proces 1 desbloquejat a la it 58
+Proces 0 desbloquejat a la it 58
+Proces 6 bloquejat a la it 58
+Proces 5 bloquejat a la it 58
+Proces 7 bloquejat a la it 58
+Proces 5 desbloquejat a la it 58
+Proces 7 desbloquejat a la it 58
+Proces 4 desbloquejat a la it 58
+Proces 6 desbloquejat a la it 58
+Proces 2 bloquejat a la it 59
+Proces 3 bloquejat a la it 59
+Proces 0 bloquejat a la it 59
+Proces 1 bloquejat a la it 59
+Proces 4 bloquejat a la it 59
+Proces 3 desbloquejat a la it 59
+Proces 1 desbloquejat a la it 59
+Proces 0 desbloquejat a la it 59
+Proces 2 desbloquejat a la it 59
+Proces 5 bloquejat a la it 59
+Proces 6 bloquejat a la it 59
+Proces 7 bloquejat a la it 59
+Proces 4 desbloquejat a la it 59
+Proces 5 desbloquejat a la it 59
+Proces 7 desbloquejat a la it 59
+Proces 6 desbloquejat a la it 59
+Proces 2 bloquejat a la it 60
+Proces 3 bloquejat a la it 60
+Proces 0 bloquejat a la it 60
+Proces 4 bloquejat a la it 60
+Proces 3 desbloquejat a la it 60
+Proces 1 bloquejat a la it 60
+Proces 1 desbloquejat a la it 60
+Proces 6 bloquejat a la it 60
+Proces 0 desbloquejat a la it 60
+Proces 5 bloquejat a la it 60
+Proces 2 desbloquejat a la it 60
+Proces 7 bloquejat a la it 60
+Proces 5 desbloquejat a la it 60
+Proces 4 desbloquejat a la it 60
+Proces 7 desbloquejat a la it 60
+Proces 6 desbloquejat a la it 60
+Proces 2 bloquejat a la it 61
+Proces 3 bloquejat a la it 61
+Proces 0 bloquejat a la it 61
+Proces 1 bloquejat a la it 61
+Proces 4 bloquejat a la it 61
+Proces 1 desbloquejat a la it 61
+Proces 0 desbloquejat a la it 61
+Proces 2 desbloquejat a la it 61
+Proces 3 desbloquejat a la it 61
+Proces 5 bloquejat a la it 61
+Proces 6 bloquejat a la it 61
+Proces 7 bloquejat a la it 61
+Proces 4 desbloquejat a la it 61
+Proces 7 desbloquejat a la it 61
+Proces 5 desbloquejat a la it 61
+Proces 6 desbloquejat a la it 61
+Proces 2 bloquejat a la it 62
+Proces 3 bloquejat a la it 62
+Proces 0 bloquejat a la it 62
+Proces 1 bloquejat a la it 62
+Proces 4 bloquejat a la it 62
+Proces 1 desbloquejat a la it 62
+Proces 2 desbloquejat a la it 62
+Proces 0 desbloquejat a la it 62
+Proces 3 desbloquejat a la it 62
+Proces 6 bloquejat a la it 62
+Proces 5 bloquejat a la it 62
+Proces 4 desbloquejat a la it 62
+Proces 7 bloquejat a la it 62
+Proces 5 desbloquejat a la it 62
+Proces 7 desbloquejat a la it 62
+Proces 6 desbloquejat a la it 62
+Proces 2 bloquejat a la it 63
+Proces 3 bloquejat a la it 63
+Proces 0 bloquejat a la it 63
+Proces 4 bloquejat a la it 63
+Proces 1 bloquejat a la it 63
+Proces 3 desbloquejat a la it 63
+Proces 5 bloquejat a la it 63
+Proces 1 desbloquejat a la it 63
+Proces 4 desbloquejat a la it 63
+Proces 2 desbloquejat a la it 63
+Proces 0 desbloquejat a la it 63
+Proces 6 bloquejat a la it 63
+Proces 7 bloquejat a la it 63
+Proces 5 desbloquejat a la it 63
+Proces 7 desbloquejat a la it 63
+Proces 6 desbloquejat a la it 63
+Proces 2 bloquejat a la it 64
+Proces 3 bloquejat a la it 64
+Proces 0 bloquejat a la it 64
+Proces 1 bloquejat a la it 64
+Proces 4 bloquejat a la it 64
+Proces 1 desbloquejat a la it 64
+Proces 3 desbloquejat a la it 64
+Proces 0 desbloquejat a la it 64
+Proces 2 desbloquejat a la it 64
+Proces 6 bloquejat a la it 64
+Proces 5 bloquejat a la it 64
+Proces 4 desbloquejat a la it 64
+Proces 7 bloquejat a la it 64
+Proces 5 desbloquejat a la it 64
+Proces 7 desbloquejat a la it 64
+Proces 6 desbloquejat a la it 64
+Proces 2 bloquejat a la it 65
+Proces 0 bloquejat a la it 65
+Proces 4 bloquejat a la it 65
+Proces 1 bloquejat a la it 65
+Proces 5 bloquejat a la it 65
+Proces 6 bloquejat a la it 65
+Proces 7 bloquejat a la it 65
+Proces 3 bloquejat a la it 65
+Proces 1 desbloquejat a la it 65
+Proces 0 desbloquejat a la it 65
+Proces 7 desbloquejat a la it 65
+Proces 3 desbloquejat a la it 65
+Proces 2 desbloquejat a la it 65
+Proces 4 desbloquejat a la it 65
+Proces 5 desbloquejat a la it 65
+Proces 6 desbloquejat a la it 65
+Proces 0 bloquejat a la it 66
+Proces 4 bloquejat a la it 66
+Proces 1 bloquejat a la it 66
+Proces 2 bloquejat a la it 66
+Proces 1 desbloquejat a la it 66
+Proces 0 desbloquejat a la it 66
+Proces 6 bloquejat a la it 66
+Proces 3 bloquejat a la it 66
+Proces 5 bloquejat a la it 66
+Proces 7 bloquejat a la it 66
+Proces 3 desbloquejat a la it 66
+Proces 2 desbloquejat a la it 66
+Proces 5 desbloquejat a la it 66
+Proces 4 desbloquejat a la it 66
+Proces 7 desbloquejat a la it 66
+Proces 6 desbloquejat a la it 66
+Proces 0 bloquejat a la it 67
+Proces 4 bloquejat a la it 67
+Proces 1 bloquejat a la it 67
+Proces 2 bloquejat a la it 67
+Proces 1 desbloquejat a la it 67
+Proces 0 desbloquejat a la it 67
+Proces 6 bloquejat a la it 67
+Proces 3 bloquejat a la it 67
+Proces 7 bloquejat a la it 67
+Proces 5 bloquejat a la it 67
+Proces 4 desbloquejat a la it 67
+Proces 3 desbloquejat a la it 67
+Proces 7 desbloquejat a la it 67
+Proces 5 desbloquejat a la it 67
+Proces 2 desbloquejat a la it 67
+Proces 6 desbloquejat a la it 67
+Proces 2 bloquejat a la it 68
+Proces 0 bloquejat a la it 68
+Proces 1 bloquejat a la it 68
+Proces 3 bloquejat a la it 68
+Proces 4 bloquejat a la it 68
+Proces 1 desbloquejat a la it 68
+Proces 0 desbloquejat a la it 68
+Proces 3 desbloquejat a la it 68
+Proces 2 desbloquejat a la it 68
+Proces 5 bloquejat a la it 68
+Proces 4 desbloquejat a la it 68
+Proces 6 bloquejat a la it 68
+Proces 7 bloquejat a la it 68
+Proces 7 desbloquejat a la it 68
+Proces 5 desbloquejat a la it 68
+Proces 6 desbloquejat a la it 68
+Proces 0 bloquejat a la it 69
+Proces 4 bloquejat a la it 69
+Proces 1 bloquejat a la it 69
+Proces 2 bloquejat a la it 69
+Proces 1 desbloquejat a la it 69
+Proces 3 bloquejat a la it 69
+Proces 0 desbloquejat a la it 69
+Proces 6 bloquejat a la it 69
+Proces 7 bloquejat a la it 69
+Proces 5 bloquejat a la it 69
+Proces 3 desbloquejat a la it 69
+Proces 7 desbloquejat a la it 69
+Proces 5 desbloquejat a la it 69
+Proces 2 desbloquejat a la it 69
+Proces 4 desbloquejat a la it 69
+Proces 6 desbloquejat a la it 69
+Proces 0 bloquejat a la it 70
+Proces 1 bloquejat a la it 70
+Proces 4 bloquejat a la it 70
+Proces 2 bloquejat a la it 70
+Proces 1 desbloquejat a la it 70
+Proces 0 desbloquejat a la it 70
+Proces 3 bloquejat a la it 70
+Proces 5 bloquejat a la it 70
+Proces 3 desbloquejat a la it 70
+Proces 6 bloquejat a la it 70
+Proces 7 bloquejat a la it 70
+Proces 4 desbloquejat a la it 70
+Proces 2 desbloquejat a la it 70
+Proces 7 desbloquejat a la it 70
+Proces 5 desbloquejat a la it 70
+Proces 6 desbloquejat a la it 70
+Proces 0 bloquejat a la it 71
+Proces 2 bloquejat a la it 71
+Proces 1 bloquejat a la it 71
+Proces 4 bloquejat a la it 71
+Proces 1 desbloquejat a la it 71
+Proces 3 bloquejat a la it 71
+Proces 0 desbloquejat a la it 71
+Proces 3 desbloquejat a la it 71
+Proces 6 bloquejat a la it 71
+Proces 7 bloquejat a la it 71
+Proces 2 desbloquejat a la it 71
+Proces 5 bloquejat a la it 71
+Proces 4 desbloquejat a la it 71
+Proces 5 desbloquejat a la it 71
+Proces 7 desbloquejat a la it 71
+Proces 6 desbloquejat a la it 71
+Proces 2 bloquejat a la it 72
+Proces 1 bloquejat a la it 72
+Proces 4 bloquejat a la it 72
+Proces 0 bloquejat a la it 72
+Proces 3 bloquejat a la it 72
+Proces 0 desbloquejat a la it 72
+Proces 3 desbloquejat a la it 72
+Proces 1 desbloquejat a la it 72
+Proces 2 desbloquejat a la it 72
+Proces 6 bloquejat a la it 72
+Proces 5 bloquejat a la it 72
+Proces 7 bloquejat a la it 72
+Proces 4 desbloquejat a la it 72
+Proces 5 desbloquejat a la it 72
+Proces 7 desbloquejat a la it 72
+Proces 6 desbloquejat a la it 72
+Proces 0 bloquejat a la it 73
+Proces 1 bloquejat a la it 73
+Proces 4 bloquejat a la it 73
+Proces 3 bloquejat a la it 73
+Proces 0 desbloquejat a la it 73
+Proces 2 bloquejat a la it 73
+Proces 1 desbloquejat a la it 73
+Proces 5 bloquejat a la it 73
+Proces 2 desbloquejat a la it 73
+Proces 4 desbloquejat a la it 73
+Proces 7 bloquejat a la it 73
+Proces 3 desbloquejat a la it 73
+Proces 6 bloquejat a la it 73
+Proces 6 desbloquejat a la it 73
+Proces 7 desbloquejat a la it 73
+Proces 5 desbloquejat a la it 73
+Proces 0 bloquejat a la it 74
+Proces 1 bloquejat a la it 74
+Proces 2 bloquejat a la it 74
+Proces 4 bloquejat a la it 74
+Proces 0 desbloquejat a la it 74
+Proces 1 desbloquejat a la it 74
+Proces 7 bloquejat a la it 74
+Proces 6 bloquejat a la it 74
+Proces 3 bloquejat a la it 74
+Proces 5 bloquejat a la it 74
+Proces 3 desbloquejat a la it 74
+Proces 7 desbloquejat a la it 74
+Proces 2 desbloquejat a la it 74
+Proces 5 desbloquejat a la it 74
+Proces 6 desbloquejat a la it 74
+Proces 4 desbloquejat a la it 74
+Proces 0 bloquejat a la it 75
+Proces 1 bloquejat a la it 75
+Proces 2 bloquejat a la it 75
+Proces 4 bloquejat a la it 75
+Proces 1 desbloquejat a la it 75
+Proces 0 desbloquejat a la it 75
+Proces 3 bloquejat a la it 75
+Proces 6 bloquejat a la it 75
+Proces 3 desbloquejat a la it 75
+Proces 7 bloquejat a la it 75
+Proces 5 bloquejat a la it 75
+Proces 4 desbloquejat a la it 75
+Proces 2 desbloquejat a la it 75
+Proces 7 desbloquejat a la it 75
+Proces 5 desbloquejat a la it 75
+Proces 6 desbloquejat a la it 75
+Proces 0 bloquejat a la it 76
+Proces 4 bloquejat a la it 76
+Proces 2 bloquejat a la it 76
+Proces 1 bloquejat a la it 76
+Proces 1 desbloquejat a la it 76
+Proces 3 bloquejat a la it 76
+Proces 5 bloquejat a la it 76
+Proces 0 desbloquejat a la it 76
+Proces 6 bloquejat a la it 76
+Proces 3 desbloquejat a la it 76
+Proces 4 desbloquejat a la it 76
+Proces 7 bloquejat a la it 76
+Proces 2 desbloquejat a la it 76
+Proces 5 desbloquejat a la it 76
+Proces 7 desbloquejat a la it 76
+Proces 6 desbloquejat a la it 76
+Proces 2 bloquejat a la it 77
+Proces 3 bloquejat a la it 77
+Proces 4 bloquejat a la it 77
+Proces 1 bloquejat a la it 77
+Proces 0 bloquejat a la it 77
+Proces 0 desbloquejat a la it 77
+Proces 3 desbloquejat a la it 77
+Proces 1 desbloquejat a la it 77
+Proces 5 bloquejat a la it 77
+Proces 4 desbloquejat a la it 77
+Proces 2 desbloquejat a la it 77
+Proces 6 bloquejat a la it 77
+Proces 7 bloquejat a la it 77
+Proces 7 desbloquejat a la it 77
+Proces 5 desbloquejat a la it 77
+Proces 6 desbloquejat a la it 77
+Proces 0 bloquejat a la it 78
+Proces 2 bloquejat a la it 78
+Proces 1 bloquejat a la it 78
+Proces 4 bloquejat a la it 78
+Proces 1 desbloquejat a la it 78
+Proces 3 bloquejat a la it 78
+Proces 0 desbloquejat a la it 78
+Proces 3 desbloquejat a la it 78
+Proces 2 desbloquejat a la it 78
+Proces 5 bloquejat a la it 78
+Proces 4 desbloquejat a la it 78
+Proces 6 bloquejat a la it 78
+Proces 7 bloquejat a la it 78
+Proces 7 desbloquejat a la it 78
+Proces 5 desbloquejat a la it 78
+Proces 6 desbloquejat a la it 78
+Proces 0 bloquejat a la it 79
+Proces 2 bloquejat a la it 79
+Proces 1 bloquejat a la it 79
+Proces 4 bloquejat a la it 79
+Proces 3 bloquejat a la it 79
+Proces 1 desbloquejat a la it 79
+Proces 0 desbloquejat a la it 79
+Proces 3 desbloquejat a la it 79
+Proces 5 bloquejat a la it 79
+Proces 2 desbloquejat a la it 79
+Proces 7 bloquejat a la it 79
+Proces 6 bloquejat a la it 79
+Proces 4 desbloquejat a la it 79
+Proces 6 desbloquejat a la it 79
+Proces 5 desbloquejat a la it 79
+Proces 7 desbloquejat a la it 79
+Proces 0 bloquejat a la it 80
+Proces 4 bloquejat a la it 80
+Proces 1 bloquejat a la it 80
+Proces 2 bloquejat a la it 80
+Proces 3 bloquejat a la it 80
+Proces 6 bloquejat a la it 80
+Proces 0 desbloquejat a la it 80
+Proces 1 desbloquejat a la it 80
+Proces 5 bloquejat a la it 80
+Proces 3 desbloquejat a la it 80
+Proces 4 desbloquejat a la it 80
+Proces 7 bloquejat a la it 80
+Proces 2 desbloquejat a la it 80
+Proces 5 desbloquejat a la it 80
+Proces 7 desbloquejat a la it 80
+Proces 6 desbloquejat a la it 80
+Proces 0 bloquejat a la it 81
+Proces 1 bloquejat a la it 81
+Proces 2 bloquejat a la it 81
+Proces 4 bloquejat a la it 81
+Proces 1 desbloquejat a la it 81
+Proces 3 bloquejat a la it 81
+Proces 0 desbloquejat a la it 81
+Proces 5 bloquejat a la it 81
+Proces 3 desbloquejat a la it 81
+Proces 7 bloquejat a la it 81
+Proces 6 bloquejat a la it 81
+Proces 2 desbloquejat a la it 81
+Proces 4 desbloquejat a la it 81
+Proces 6 desbloquejat a la it 81
+Proces 5 desbloquejat a la it 81
+Proces 7 desbloquejat a la it 81
+Proces 2 bloquejat a la it 82
+Proces 0 bloquejat a la it 82
+Proces 1 bloquejat a la it 82
+Proces 3 bloquejat a la it 82
+Proces 4 bloquejat a la it 82
+Proces 0 desbloquejat a la it 82
+Proces 1 desbloquejat a la it 82
+Proces 3 desbloquejat a la it 82
+Proces 2 desbloquejat a la it 82
+Proces 6 bloquejat a la it 82
+Proces 5 bloquejat a la it 82
+Proces 4 desbloquejat a la it 82
+Proces 5 desbloquejat a la it 82
+Proces 7 bloquejat a la it 82
+Proces 7 desbloquejat a la it 82
+Proces 6 desbloquejat a la it 82
+Proces 0 bloquejat a la it 83
+Proces 1 bloquejat a la it 83
+Proces 4 bloquejat a la it 83
+Proces 0 desbloquejat a la it 83
+Proces 3 bloquejat a la it 83
+Proces 5 bloquejat a la it 83
+Proces 4 desbloquejat a la it 83
+Proces 6 bloquejat a la it 83
+Proces 2 bloquejat a la it 83
+Proces 5 desbloquejat a la it 83
+Proces 2 desbloquejat a la it 83
+Proces 1 desbloquejat a la it 83
+Proces 7 bloquejat a la it 83
+Proces 3 desbloquejat a la it 83
+Proces 7 desbloquejat a la it 83
+Proces 6 desbloquejat a la it 83
+Proces 0 bloquejat a la it 84
+Proces 1 bloquejat a la it 84
+Proces 3 bloquejat a la it 84
+Proces 4 bloquejat a la it 84
+Proces 2 bloquejat a la it 84
+Proces 0 desbloquejat a la it 84
+Proces 2 desbloquejat a la it 84
+Proces 1 desbloquejat a la it 84
+Proces 7 bloquejat a la it 84
+Proces 3 desbloquejat a la it 84
+Proces 6 bloquejat a la it 84
+Proces 5 bloquejat a la it 84
+Proces 5 desbloquejat a la it 84
+Proces 7 desbloquejat a la it 84
+Proces 4 desbloquejat a la it 84
+Proces 6 desbloquejat a la it 84
+Proces 0 bloquejat a la it 85
+Proces 4 bloquejat a la it 85
+Proces 1 bloquejat a la it 85
+Proces 2 bloquejat a la it 85
+Proces 6 bloquejat a la it 85
+Proces 3 bloquejat a la it 85
+Proces 0 desbloquejat a la it 85
+Proces 1 desbloquejat a la it 85
+Proces 5 bloquejat a la it 85
+Proces 4 desbloquejat a la it 85
+Proces 7 bloquejat a la it 85
+Proces 5 desbloquejat a la it 85
+Proces 3 desbloquejat a la it 85
+Proces 2 desbloquejat a la it 85
+Proces 7 desbloquejat a la it 85
+Proces 6 desbloquejat a la it 85
+Proces 0 bloquejat a la it 86
+Proces 4 bloquejat a la it 86
+Proces 2 bloquejat a la it 86
+Proces 1 bloquejat a la it 86
+Proces 3 bloquejat a la it 86
+Proces 1 desbloquejat a la it 86
+Proces 6 bloquejat a la it 86
+Proces 0 desbloquejat a la it 86
+Proces 5 bloquejat a la it 86
+Proces 4 desbloquejat a la it 86
+Proces 3 desbloquejat a la it 86
+Proces 7 bloquejat a la it 86
+Proces 2 desbloquejat a la it 86
+Proces 7 desbloquejat a la it 86
+Proces 5 desbloquejat a la it 86
+Proces 6 desbloquejat a la it 86
+Proces 0 bloquejat a la it 87
+Proces 4 bloquejat a la it 87
+Proces 2 bloquejat a la it 87
+Proces 1 bloquejat a la it 87
+Proces 3 bloquejat a la it 87
+Proces 1 desbloquejat a la it 87
+Proces 0 desbloquejat a la it 87
+Proces 6 bloquejat a la it 87
+Proces 5 bloquejat a la it 87
+Proces 3 desbloquejat a la it 87
+Proces 7 bloquejat a la it 87
+Proces 4 desbloquejat a la it 87
+Proces 2 desbloquejat a la it 87
+Proces 5 desbloquejat a la it 87
+Proces 7 desbloquejat a la it 87
+Proces 6 desbloquejat a la it 87
+Proces 0 bloquejat a la it 88
+Proces 2 bloquejat a la it 88
+Proces 1 bloquejat a la it 88
+Proces 4 bloquejat a la it 88
+Proces 1 desbloquejat a la it 88
+Proces 3 bloquejat a la it 88
+Proces 0 desbloquejat a la it 88
+Proces 6 bloquejat a la it 88
+Proces 5 bloquejat a la it 88
+Proces 3 desbloquejat a la it 88
+Proces 7 bloquejat a la it 88
+Proces 2 desbloquejat a la it 88
+Proces 5 desbloquejat a la it 88
+Proces 7 desbloquejat a la it 88
+Proces 4 desbloquejat a la it 88
+Proces 6 desbloquejat a la it 88
+Proces 0 bloquejat a la it 89
+Proces 4 bloquejat a la it 89
+Proces 1 bloquejat a la it 89
+Proces 2 bloquejat a la it 89
+Proces 5 bloquejat a la it 89
+Proces 0 desbloquejat a la it 89
+Proces 3 bloquejat a la it 89
+Proces 6 bloquejat a la it 89
+Proces 4 desbloquejat a la it 89
+Proces 7 bloquejat a la it 89
+Proces 3 desbloquejat a la it 89
+Proces 1 desbloquejat a la it 89
+Proces 5 desbloquejat a la it 89
+Proces 2 desbloquejat a la it 89
+Proces 7 desbloquejat a la it 89
+Proces 6 desbloquejat a la it 89
+Proces 0 bloquejat a la it 90
+Proces 2 bloquejat a la it 90
+Proces 1 bloquejat a la it 90
+Proces 4 bloquejat a la it 90
+Proces 1 desbloquejat a la it 90
+Proces 3 bloquejat a la it 90
+Proces 0 desbloquejat a la it 90
+Proces 5 bloquejat a la it 90
+Proces 4 desbloquejat a la it 90
+Proces 3 desbloquejat a la it 90
+Proces 6 bloquejat a la it 90
+Proces 2 desbloquejat a la it 90
+Proces 7 bloquejat a la it 90
+Proces 5 desbloquejat a la it 90
+Proces 7 desbloquejat a la it 90
+Proces 6 desbloquejat a la it 90
+Proces 0 bloquejat a la it 91
+Proces 2 bloquejat a la it 91
+Proces 4 bloquejat a la it 91
+Proces 1 bloquejat a la it 91
+Proces 1 desbloquejat a la it 91
+Proces 3 bloquejat a la it 91
+Proces 6 bloquejat a la it 91
+Proces 0 desbloquejat a la it 91
+Proces 5 bloquejat a la it 91
+Proces 4 desbloquejat a la it 91
+Proces 3 desbloquejat a la it 91
+Proces 2 desbloquejat a la it 91
+Proces 7 bloquejat a la it 91
+Proces 5 desbloquejat a la it 91
+Proces 7 desbloquejat a la it 91
+Proces 6 desbloquejat a la it 91
+Proces 0 bloquejat a la it 92
+Proces 2 bloquejat a la it 92
+Proces 4 bloquejat a la it 92
+Proces 1 bloquejat a la it 92
+Proces 3 bloquejat a la it 92
+Proces 1 desbloquejat a la it 92
+Proces 0 desbloquejat a la it 92
+Proces 5 bloquejat a la it 92
+Proces 4 desbloquejat a la it 92
+Proces 6 bloquejat a la it 92
+Proces 3 desbloquejat a la it 92
+Proces 7 bloquejat a la it 92
+Proces 2 desbloquejat a la it 92
+Proces 7 desbloquejat a la it 92
+Proces 5 desbloquejat a la it 92
+Proces 6 desbloquejat a la it 92
+Proces 0 bloquejat a la it 93
+Proces 4 bloquejat a la it 93
+Proces 1 bloquejat a la it 93
+Proces 2 bloquejat a la it 93
+Proces 3 bloquejat a la it 93
+Proces 5 bloquejat a la it 93
+Proces 0 desbloquejat a la it 93
+Proces 4 desbloquejat a la it 93
+Proces 6 bloquejat a la it 93
+Proces 1 desbloquejat a la it 93
+Proces 3 desbloquejat a la it 93
+Proces 7 bloquejat a la it 93
+Proces 2 desbloquejat a la it 93
+Proces 7 desbloquejat a la it 93
+Proces 5 desbloquejat a la it 93
+Proces 6 desbloquejat a la it 93
+Proces 0 bloquejat a la it 94
+Proces 1 bloquejat a la it 94
+Proces 4 bloquejat a la it 94
+Proces 2 bloquejat a la it 94
+Proces 1 desbloquejat a la it 94
+Proces 0 desbloquejat a la it 94
+Proces 3 bloquejat a la it 94
+Proces 5 bloquejat a la it 94
+Proces 6 bloquejat a la it 94
+Proces 3 desbloquejat a la it 94
+Proces 7 bloquejat a la it 94
+Proces 4 desbloquejat a la it 94
+Proces 2 desbloquejat a la it 94
+Proces 7 desbloquejat a la it 94
+Proces 5 desbloquejat a la it 94
+Proces 6 desbloquejat a la it 94
+Proces 0 bloquejat a la it 95
+Proces 4 bloquejat a la it 95
+Proces 1 bloquejat a la it 95
+Proces 2 bloquejat a la it 95
+Proces 1 desbloquejat a la it 95
+Proces 3 bloquejat a la it 95
+Proces 0 desbloquejat a la it 95
+Proces 6 bloquejat a la it 95
+Proces 7 bloquejat a la it 95
+Proces 5 bloquejat a la it 95
+Proces 3 desbloquejat a la it 95
+Proces 4 desbloquejat a la it 95
+Proces 7 desbloquejat a la it 95
+Proces 5 desbloquejat a la it 95
+Proces 2 desbloquejat a la it 95
+Proces 6 desbloquejat a la it 95
+Proces 2 bloquejat a la it 96
+Proces 0 bloquejat a la it 96
+Proces 1 bloquejat a la it 96
+Proces 4 bloquejat a la it 96
+Proces 1 desbloquejat a la it 96
+Proces 3 bloquejat a la it 96
+Proces 0 desbloquejat a la it 96
+Proces 6 bloquejat a la it 96
+Proces 3 desbloquejat a la it 96
+Proces 2 desbloquejat a la it 96
+Proces 7 bloquejat a la it 96
+Proces 5 bloquejat a la it 96
+Proces 5 desbloquejat a la it 96
+Proces 4 desbloquejat a la it 96
+Proces 7 desbloquejat a la it 96
+Proces 6 desbloquejat a la it 96
+Proces 0 bloquejat a la it 97
+Proces 4 bloquejat a la it 97
+Proces 2 bloquejat a la it 97
+Proces 1 bloquejat a la it 97
+Proces 3 bloquejat a la it 97
+Proces 1 desbloquejat a la it 97
+Proces 0 desbloquejat a la it 97
+Proces 5 bloquejat a la it 97
+Proces 4 desbloquejat a la it 97
+Proces 6 bloquejat a la it 97
+Proces 3 desbloquejat a la it 97
+Proces 2 desbloquejat a la it 97
+Proces 7 bloquejat a la it 97
+Proces 7 desbloquejat a la it 97
+Proces 5 desbloquejat a la it 97
+Proces 6 desbloquejat a la it 97
+Proces 2 bloquejat a la it 98
+Proces 0 bloquejat a la it 98
+Proces 1 bloquejat a la it 98
+Proces 4 bloquejat a la it 98
+Proces 1 desbloquejat a la it 98
+Proces 3 bloquejat a la it 98
+Proces 0 desbloquejat a la it 98
+Proces 3 desbloquejat a la it 98
+Proces 5 bloquejat a la it 98
+Proces 4 desbloquejat a la it 98
+Proces 2 desbloquejat a la it 98
+Proces 6 bloquejat a la it 98
+Proces 7 bloquejat a la it 98
+Proces 5 desbloquejat a la it 98
+Proces 7 desbloquejat a la it 98
+Proces 6 desbloquejat a la it 98
+Proces 0 bloquejat a la it 99
+Proces 4 bloquejat a la it 99
+Proces 1 bloquejat a la it 99
+Proces 2 bloquejat a la it 99
+Proces 3 bloquejat a la it 99
+Proces 0 desbloquejat a la it 99
+Proces 7 bloquejat a la it 99
+Proces 6 bloquejat a la it 99
+Proces 5 bloquejat a la it 99
+Proces 1 desbloquejat a la it 99
+Proces 4 desbloquejat a la it 99
+Proces 3 desbloquejat a la it 99
+Proces 5 desbloquejat a la it 99
+Proces 2 desbloquejat a la it 99
+Proces 7 desbloquejat a la it 99
+Proces 6 desbloquejat a la it 99
+Proces 2 bloquejat a la it 100
+Proces 2 desbloquejat a la it 100
+Proces 0 bloquejat a la it 100
+Proces 0 desbloquejat a la it 100
+Proces 1 bloquejat a la it 100
+Proces 1 desbloquejat a la it 100
+Proces 4 bloquejat a la it 100
+Proces 4 desbloquejat a la it 100
+Proces 3 bloquejat a la it 100
+Proces 3 desbloquejat a la it 100
+Proces 5 bloquejat a la it 100
+Proces 5 desbloquejat a la it 100
+Proces 6 bloquejat a la it 100
+Proces 6 desbloquejat a la it 100
+Proces 7 bloquejat a la it 100
+Proces 7 desbloquejat a la it 100
+soc el proces 4 i envio 
+soc el proces 2 i envio 
+soc el proces 1 i envio 
+soc el proces 5 i envio 
+soc el proces 6 i envio 
+soc el proces 3 i envio 
+soc el proces 7 i envio 
+Process 1 finished computing after 100 iterations with residual value = 3.713089
+Process 2 finished computing after 100 iterations with residual value = 3.713089
+Process 3 finished computing after 100 iterations with residual value = 3.713089
+Process 4 finished computing after 100 iterations with residual value = 3.713089
+Process 5 finished computing after 100 iterations with residual value = 3.713089
+Process 6 finished computing after 100 iterations with residual value = 3.713089
+Process 7 finished computing after 100 iterations with residual value = 3.713089
+Time: 89.466 
+Flops and Flops per second: (73.820 GFlop => 825.11 MFlop/s)
+Convergence to residual=3.713089: 100 iterations
+Process acabat
+Process acabat
+Process acabat
+Process acabat
+Process acabat
+Process acabat
+Process acabat
+Acaba el procées 0nExtrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031561000000000000.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031564000000000000.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031558000000000000.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031567000000000000.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031568000000000000.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031566000000000000.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031562000000000000.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031560000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031561000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031561000000000001.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031564000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031564000000000001.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031567000000000000.sym
+Extrae: Intermediate raw sym file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031558000000000000.sym
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+Extrae: Proceeding with the merge of the intermediate tracefiles.
+Extrae: Intermediate raw sym file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031560000000000000.sym
+Extrae: Intermediate raw sym file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031568000000000000.sym
+Extrae: Deallocating memory.
+Extrae: Intermediate raw sym file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031566000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031567000000000001.mpit
+Extrae: Application has ended. Tracing has been terminated.
+Extrae: Proceeding with the merge of the intermediate tracefiles.
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031558000000000001.mpit
+Extrae: Executing the merge process (using /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/TRACE.mpits).
+Extrae: Executing the merge process (using /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/TRACE.mpits).
+merger: Extrae 3.5.4
+mpi2prv: Assigned nodes < boada-6 >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031566000000000000.mpit is object 1.1.1 on node boada-6 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031562000000000001.mpit is object 1.1.2 on node boada-6 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+Extrae: Intermediate raw sym file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031562000000000000.sym
+merger: Extrae 3.5.4
+mpi2prv: Assigned nodes < boada-6 >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031566000000000000.mpit is object 1.1.1 on node boada-6 assigned to processor 0
+mpi2prv: Checking for target directory existance... exists, ok!
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031562000000000001.mpit is object 1.1.2 on node boada-6 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existance... exists, ok!
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031560000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031568000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031566000000000001.mpit
+Extrae: Deallocating memory.
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+Extrae: Proceeding with the merge of the intermediate tracefiles.
+Extrae: Executing the merge process (using /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/TRACE.mpits).
+merger: Extrae 3.5.4
+mpi2prv: Assigned nodes < boada-6 >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031566000000000000.mpit is object 1.1.1 on node boada-6 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031562000000000001.mpit is object 1.1.2 on node boada-6 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existance... exists, ok!
+Extrae: Application has ended. Tracing has been terminated.
+Extrae: Proceeding with the merge of the intermediate tracefiles.
+Extrae: Deallocating memory.
+Extrae: Executing the merge process (using /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/TRACE.mpits).
+merger: Extrae 3.5.4
+mpi2prv: Assigned nodes < boada-6 >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031566000000000000.mpit is object 1.1.1 on node boada-6 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031562000000000001.mpit is object 1.1.2 on node boada-6 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existance... exists, ok!
+Extrae: Application has ended. Tracing has been terminated.
+Extrae: Proceeding with the merge of the intermediate tracefiles.
+Extrae: Executing the merge process (using /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/TRACE.mpits).
+merger: Extrae 3.5.4
+mpi2prv: Assigned nodes < boada-6 >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031566000000000000.mpit is object 1.1.1 on node boada-6 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031562000000000001.mpit is object 1.1.2 on node boada-6 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existance... exists, ok!
+Extrae: Intermediate raw trace file created : /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031562000000000001.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+Extrae: Proceeding with the merge of the intermediate tracefiles.
+Extrae: Executing the merge process (using /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/TRACE.mpits).
+merger: Extrae 3.5.4
+mpi2prv: Assigned nodes < boada-6 >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031566000000000000.mpit is object 1.1.1 on node boada-6 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031562000000000001.mpit is object 1.1.2 on node boada-6 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existance... exists, ok!
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+Extrae: Proceeding with the merge of the intermediate tracefiles.
+Extrae: Executing the merge process (using /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/TRACE.mpits).
+merger: Extrae 3.5.4
+mpi2prv: Assigned nodes < boada-6 >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031566000000000000.mpit is object 1.1.1 on node boada-6 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031562000000000001.mpit is object 1.1.2 on node boada-6 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existance... exists, ok!
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+Extrae: Proceeding with the merge of the intermediate tracefiles.
+Extrae: Executing the merge process (using /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/TRACE.mpits).
+merger: Extrae 3.5.4
+mpi2prv: Assigned nodes < boada-6 >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031566000000000000.mpit is object 1.1.1 on node boada-6 assigned to processor 0
+mpi2prv: File /scratch/nas/1/pap0016/PAP-FIB/lab4/heat/set-0/TRACE@boada-6.0000031562000000000001.mpit is object 1.1.2 on node boada-6 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existance... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Searching synchronization points... done
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Searching synchronization points... done
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... mpi2prv: Selected output trace format is Paraver
+5% 10% 15% 20% 25% 30% 35% mpi2prv: Stored trace format is Paraver
+mpi2prv: Searching synchronization points... done
+mpi2prv: Enabling Time Synchronization (Node).
+40% mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 45% 50% 15% 55% 20% 60% 25% 65% 30% 70% 35% 75% 40% 80% 45% 85% 50% 90% 55% 95% 60% done
+65% mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 3355392 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 47298 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 3355392 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 47298 bytes
+mpi2prv: Generating tracefile (intermediate buffers of 3355392 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... mpi2prv: Removing temporal files... 5% done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 47298 bytes
+mpi2prv: Congratulations! heat-hybrid.prv has been generated.
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! heat-hybrid.prv has been generated.
+mpi2prv: Congratulations! heat-hybrid.prv has been generated.

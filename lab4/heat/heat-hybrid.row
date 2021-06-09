@@ -1,0 +1,38 @@
+LEVEL CPU SIZE 16
+01.boada-7
+02.boada-7
+03.boada-7
+04.boada-7
+05.boada-7
+06.boada-7
+07.boada-7
+08.boada-7
+09.boada-7
+10.boada-7
+11.boada-7
+12.boada-7
+13.boada-7
+14.boada-7
+15.boada-7
+16.boada-7
+
+LEVEL NODE SIZE 1
+boada-7
+
+LEVEL THREAD SIZE 16
+THREAD 1.1.1
+THREAD 1.1.2
+THREAD 1.1.3
+THREAD 1.1.4
+THREAD 1.1.5
+THREAD 1.1.6
+THREAD 1.1.7
+THREAD 1.1.8
+THREAD 1.1.9
+THREAD 1.1.10
+THREAD 1.1.11
+THREAD 1.1.12
+THREAD 1.1.13
+THREAD 1.1.14
+THREAD 1.1.15
+THREAD 1.1.16
